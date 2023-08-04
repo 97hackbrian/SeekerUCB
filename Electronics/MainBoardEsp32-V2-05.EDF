@@ -1,4 +1,4 @@
-(PCB MainBoardEsp32_V2
+(PCB MainBoardEsp32_V2_05
  (parser
   (host_cad ARES)
   (host_version 8.12 SP0)
@@ -10,7 +10,7 @@
   (boundary (path signal 0.20320 -100.00000 -100.00000 100.00000 -100.00000 100.00000 100.00000
    -100.00000 100.00000 -100.00000 -100.00000))
   (flip_style mirror_first)
-  (layer TOP (type signal) (direction horizontal))
+  (layer TOP (type signal) (direction off))
   (layer I1 (type signal) (direction off))
   (layer I2 (type signal) (direction off))
   (layer I3 (type signal) (direction off))
@@ -40,11 +40,11 @@
    )
   )
   (rule
-   (width 1.01600)
-   (clearance 0.50800)
-   (clearance 0.30480 (type wire_via))
-   (clearance 0.30480 (type wire_smd))
-   (clearance 0.30480 (type wire_pin))
+   (width 1.39700)
+   (clearance 0.53340)
+   (clearance 0.27940 (type wire_via))
+   (clearance 0.27940 (type wire_smd))
+   (clearance 0.27940 (type wire_pin))
    (clearance 0.30480 (type wire_wire))
    (clearance 0.25400 (type via_pin))
    (clearance 0.25400 (type via_via))
@@ -56,7 +56,7 @@
   (component "TBLOCK-M2_J1" (place J1 -72.50000 -90.00000 front 180))
   (component "STEP-UP/DOWN_SDOWN2" (place SDOWN2 27.50000 -72.50000 front 0))
   (component "STEP-UP/DOWN_SDOWN1" (place SDOWN1 -52.50000 -72.50000 front 0))
-  (component "ARDUINO NANO_ARN1" (place ARN1 96.00000 -41.00000 front 0))
+  (component "ARDUINO NANO_ARN1" (place ARN1 56.16000 -31.00000 front 0))
   (component "TBLOCK-I2_MOSFETS VIN" (place "MOSFETS VIN" 9.00000 -86.00000 front -180
   ))
   (component "TBLOCK-I2_MOSLED1" (place MOSLED1 -85.00000 -47.50000 front 90))
@@ -96,7 +96,7 @@
   (component RES40_R24 (place R24 -65.00000 -3.00000 front -270))
   (component RES40_R9 (place R9 -61.00000 13.00000 front -270))
   (component RES40_R23 (place R23 -61.00000 7.00000 front -90))
-  (component "ARDUINO NANO_ARN2" (place ARN2 -18.24000 92.24000 front 90))
+  (component "ARDUINO NANO_ARN2" (place ARN2 -10.24000 92.24000 front 90))
   (component RES40_R7 (place R7 -48.00000 52.00000 front -180))
   (component RES40_R11 (place R11 -48.00000 37.00000 front -180))
   (component RES40_R13 (place R13 -48.00000 68.00000 front -180))
@@ -112,40 +112,40 @@
   (component LED_D12 (place D12 -54.00000 -11.00000 front -180))
   (component LED_D14 (place D14 -54.00000 -26.00000 front -180))
   (component LED_D16 (place D16 -54.00000 -41.00000 front -180))
-  (component TO92/18_Q5 (place Q5 -22.50000 8.77000 front -90))
+  (component TO92/18_Q5 (place Q5 16.02000 -8.30000 front 0))
   (component RES40_R16 (place R16 -48.00000 3.00000 front -90))
   (component RES40_R22 (place R22 -45.00000 -28.00000 front 90))
   (component RES40_R19 (place R19 -42.00000 -17.00000 front 270))
-  (component "CONN-SIL3_SERVO1" (place SERVO1 92.00000 1.92000 front 270))
-  (component "CONN-SIL3_SERVO2" (place SERVO2 89.00000 1.92000 front 270))
-  (component "CONN-SIL3_SERVO3" (place SERVO3 86.00000 1.92000 front 270))
-  (component "CONN-SIL3_SERVO4" (place SERVO4 83.00000 1.92000 front 270))
-  (component "CONN-SIL3_SERVO5" (place SERVO5 80.00000 1.92000 front 270))
-  (component MODULE_ESP32DEVKITC_ESP32 (place ESP32 0.00000 0.00000 front 0))
-  (component "CONN-DIL8_3V3 ESP32" (place "3V3 ESP32" -4.08000 34.00000 front 0))
-  (component "CONN-DIL8_3V3 NANOS" (place "3V3 NANOS" 32.38000 -33.54000 front 0))
+  (component "CONN-SIL3_SERVO1" (place SERVO1 91.00000 -16.92000 front 270))
+  (component "CONN-SIL3_SERVO2" (place SERVO2 88.00000 -16.92000 front 270))
+  (component "CONN-SIL3_SERVO3" (place SERVO3 85.00000 -16.92000 front 270))
+  (component "CONN-SIL3_SERVO4" (place SERVO4 82.00000 -16.92000 front 270))
+  (component "CONN-SIL3_SERVO5" (place SERVO5 79.00000 -16.92000 front 270))
+  (component MODULE_ESP32DEVKITC_ESP32 (place ESP32 34.29000 18.70000 front 90))
+  (component "CONN-DIL8_3V3 ESP32" (place "3V3 ESP32" -10.79000 15.70000 front 0))
+  (component "CONN-DIL8_3V3 NANOS" (place "3V3 NANOS" -0.54000 -38.00000 front 0))
   (component "TBLOCK-I2_5V 3A SENSORS" (place "5V 3A SENSORS" 91.00000 77.00000 front 270
   ))
   (component "CONN-DIL8_CONTROL-MOTOR-A" (place "CONTROL-MOTOR-A" 80.00000 -84.00000 front 0
   ))
   (component "CONN-DIL8_CONTROL-MOTOR-B" (place "CONTROL-MOTOR-B" 80.00000 -76.00000 front 0
   ))
-  (component "CONN-SIL6_EXTRA1" (place EXTRA1 -33.00000 -7.00000 front 90))
-  (component "CONN-SIL4_EXTRA2" (place EXTRA2 27.00000 -2.62000 front -90))
-  (component "CONN-SIL3_MOSFET DRIVER 1" (place "MOSFET DRIVER 1" 46.38000 93.00000 front 0
+  (component "CONN-SIL6_EXTRA1" (place EXTRA1 43.29000 -17.30000 front 180))
+  (component "CONN-SIL4_EXTRA2" (place EXTRA2 56.92000 69.00000 front 0))
+  (component "CONN-SIL3_MOSFET DRIVER 1" (place "MOSFET DRIVER 1" 54.38000 93.00000 front 0
   ))
   (component "CONN-SIL3_MOSFET DRIVER 2" (place "MOSFET DRIVER 2" 95.00000 -62.92000 front -90
   ))
   (component "TBLOCK-M6_PINES ANALOGICOS" (place "PINES ANALOGICOS" -30.00640 94.00000 front -180
   ))
-  (component "TBLOCK-M6_PINES DIGITALES" (place "PINES DIGITALES" 32.00000 94.00000 front -180
+  (component "TBLOCK-M6_PINES DIGITALES" (place "PINES DIGITALES" 40.00000 94.00000 front -180
   ))
-  (component RES40_R1 (place R1 -25.00000 69.00000 front -90))
-  (component RES40_R2 (place R2 -34.00000 69.00000 front -90))
-  (component "CONN-DIL14_VIN 5" (place "VIN 5" 60.00000 93.00000 front -90))
-  (component "TBLOCK-I2_XL4015 5V 5A" (place "XL4015 5V 5A" 91.00000 34.00000 front 90
+  (component RES40_R1 (place R1 -17.00000 69.00000 front -90))
+  (component RES40_R2 (place R2 -26.00000 69.00000 front -90))
+  (component "CONN-DIL14_VIN 5" (place "VIN 5" 68.00000 93.00000 front -90))
+  (component "TBLOCK-I2_XL4015 5V 5A" (place "XL4015 5V 5A" 87.00000 -9.00000 front 90
   ))
-  (component "TBLOCK-I2_LM2596 5V 3A" (place "LM2596 5V 3A" -75.00000 85.00000 front 0
+  (component "TBLOCK-I2_LM2596 5V 3A" (place "LM2596 5V 3A" -70.00000 92.50000 front 180
   ))
  )
  (library
@@ -976,7 +976,7 @@
  (network
   (net "#00013"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -985,7 +985,7 @@
   )
   (net "#00041"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -994,7 +994,7 @@
   )
   (net "#00064"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1003,7 +1003,7 @@
   )
   (net "#00065"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1012,7 +1012,7 @@
   )
   (net "#00067"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1021,7 +1021,7 @@
   )
   (net "#00069"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1030,7 +1030,7 @@
   )
   (net "#00070"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1039,7 +1039,7 @@
   )
   (net "#00077"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1048,7 +1048,7 @@
   )
   (net "#00078"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1057,7 +1057,7 @@
   )
   (net "#00079"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1066,7 +1066,7 @@
   )
   (net "#00081"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1075,7 +1075,7 @@
   )
   (net "#00084"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1084,7 +1084,7 @@
   )
   (net "#00099"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1093,7 +1093,7 @@
   )
   (net "#00128"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1102,7 +1102,7 @@
   )
   (net "#00129"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1111,7 +1111,7 @@
   )
   (net "#00132"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1120,7 +1120,7 @@
   )
   (net "#00161"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1129,7 +1129,7 @@
   )
   (net "#00162"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1138,7 +1138,7 @@
   )
   (net "#00166"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1147,7 +1147,7 @@
   )
   (net "#00167"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1156,7 +1156,7 @@
   )
   (net "#00171"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1165,7 +1165,7 @@
   )
   (net "#00172"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1174,7 +1174,7 @@
   )
   (net "#00174"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1183,7 +1183,7 @@
   )
   (net "#00180"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1192,7 +1192,7 @@
   )
   (net "#00181"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1201,7 +1201,7 @@
   )
   (net "#00182"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1210,7 +1210,7 @@
   )
   (net "#00183"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1219,7 +1219,7 @@
   )
   (net "#00187"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1228,7 +1228,7 @@
   )
   (net "#00200"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1237,7 +1237,7 @@
   )
   (net "#00201"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1246,7 +1246,7 @@
   )
   (net "#00205"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1255,7 +1255,7 @@
   )
   (net "#00206"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1264,7 +1264,7 @@
   )
   (net "#00207"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1273,7 +1273,7 @@
   )
   (net "#00211"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1282,7 +1282,7 @@
   )
   (net "#00212"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1291,7 +1291,7 @@
   )
   (net "#00213"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1300,7 +1300,7 @@
   )
   (net "#00217"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1309,7 +1309,7 @@
   )
   (net "12BAT"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_POWER
     )
@@ -1320,7 +1320,7 @@
   )
   (net "3V3ESP32"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_POWER
     )
@@ -1329,7 +1329,7 @@
   )
   (net "3V3NANO"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_POWER
     )
@@ -1338,7 +1338,7 @@
   )
   (net "5V3A"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_POWER
     )
@@ -1348,7 +1348,7 @@
   )
   (net "5V5ASERV"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_POWER
     )
@@ -1357,7 +1357,7 @@
   )
   (net "5VMCU"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_POWER
     )
@@ -1366,7 +1366,7 @@
   )
   (net "5VMOSFETS"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_POWER
     )
@@ -1375,7 +1375,7 @@
   )
   (net "5VMOT"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_POWER
     )
@@ -1384,7 +1384,7 @@
   )
   (net "ENA"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1393,7 +1393,7 @@
   )
   (net "ENB"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1402,7 +1402,7 @@
   )
   (net "FAN-C"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1411,7 +1411,7 @@
   )
   (net "GND"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_POWER
     )
@@ -1420,7 +1420,7 @@
   )
   (net "GND2"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_POWER
     )
@@ -1435,7 +1435,7 @@
   )
   (net "HOOTER"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1444,7 +1444,7 @@
   )
   (net "LED1"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1453,7 +1453,7 @@
   )
   (net "LED2"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1462,7 +1462,7 @@
   )
   (net "LED3"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1471,7 +1471,7 @@
   )
   (net "LED4"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1480,7 +1480,7 @@
   )
   (net "LPWMA"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1489,7 +1489,7 @@
   )
   (net "LPWMB"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1498,7 +1498,7 @@
   )
   (net "MOS1ELECT"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1507,7 +1507,7 @@
   )
   (net "MOS2"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1516,7 +1516,7 @@
   )
   (net "MOS3"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1525,7 +1525,7 @@
   )
   (net "MOS4"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1534,7 +1534,7 @@
   )
   (net "RPWMA"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1543,7 +1543,7 @@
   )
   (net "RPWMB"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1552,7 +1552,7 @@
   )
   (net "SCL"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1561,7 +1561,7 @@
   )
   (net "SDA"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1570,7 +1570,7 @@
   )
   (net "SEN1A"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1579,7 +1579,7 @@
   )
   (net "SEN1D"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1588,7 +1588,7 @@
   )
   (net "SEN2A"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1597,7 +1597,7 @@
   )
   (net "SEN2D"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1606,7 +1606,7 @@
   )
   (net "SEN3A"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1615,7 +1615,7 @@
   )
   (net "SEN3D"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1624,7 +1624,7 @@
   )
   (net "SEN4A"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1633,7 +1633,7 @@
   )
   (net "SEN4D"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1642,7 +1642,7 @@
   )
   (net "SEN5A"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1651,7 +1651,7 @@
   )
   (net "SEN5D"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1660,7 +1660,7 @@
   )
   (net "SEN6A"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1669,7 +1669,7 @@
   )
   (net "SEN6D"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1678,7 +1678,7 @@
   )
   (net "SER1"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1687,7 +1687,7 @@
   )
   (net "SER2"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1696,7 +1696,7 @@
   )
   (net "SER3"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1705,7 +1705,7 @@
   )
   (net "SER4"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1714,7 +1714,7 @@
   )
   (net "SER5"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -1734,10 +1734,10 @@
    "GND2"
    (rule
     (width 1.50000)
-    (clearance 0.50800)
-    (clearance 0.30480 (type wire_via))
-    (clearance 0.30480 (type wire_smd))
-    (clearance 0.30480 (type wire_pin))
+    (clearance 0.53340)
+    (clearance 0.27940 (type wire_via))
+    (clearance 0.27940 (type wire_smd))
+    (clearance 0.27940 (type wire_pin))
     (clearance 0.30480 (type wire_wire))
     (clearance 0.25400 (type via_pin))
     (clearance 0.25400 (type via_via))
@@ -1820,11 +1820,11 @@
    "{NC}"
    "{VOID}"
    (rule
-    (width 1.01600)
-    (clearance 0.50800)
-    (clearance 0.30480 (type wire_via))
-    (clearance 0.30480 (type wire_smd))
-    (clearance 0.30480 (type wire_pin))
+    (width 1.39700)
+    (clearance 0.53340)
+    (clearance 0.27940 (type wire_via))
+    (clearance 0.27940 (type wire_smd))
+    (clearance 0.27940 (type wire_pin))
     (clearance 0.30480 (type wire_wire))
     (clearance 0.25400 (type via_pin))
     (clearance 0.25400 (type via_via))
@@ -1833,6 +1833,56 @@
   )
  )
  (wiring
+  (wire (path TOP 1.50000 88.00000 -19.46000 85.00000 -19.46000) (net "5V5ASERV"))
+   (wire (path TOP 1.50000 91.00000 -19.46000 90.99999 -19.45999 88.00000 -19.46000)
+   (net "5V5ASERV"))
+  (wire (path TOP 1.50000 85.00000 -19.46000 82.00000 -19.46000) (net "5V5ASERV"))
+  (wire (path TOP 1.50000 88.00000 -19.46000 88.00000 -19.45999) (net "5V5ASERV"))
+   (wire (path TOP 1.50000 82.00000 -19.46000 79.00001 -19.45999 79.00000 -19.46000)
+   (net "5V5ASERV"))
+  (wire (path TOP 1.50000 85.00000 -19.46000 85.00000 -19.45999) (net "5V5ASERV"))
+  (wire (path TOP 1.50000 82.00000 -19.46000 82.00000 -19.45999) (net "5V5ASERV"))
+   (wire (path TOP 1.50000 91.00000 -22.00000 90.99999 -21.99999 88.00000 -22.00000)
+   (net "GND2"))
+  (wire (path TOP 1.50000 88.00000 -21.99999 85.00000 -22.00000) (net "GND2"))
+  (wire (path TOP 1.50000 88.00000 -22.00000 88.00000 -21.99999) (net "GND2"))
+  (wire (path TOP 1.50000 85.00000 -21.99999 82.00000 -22.00000) (net "GND2"))
+  (wire (path TOP 1.50000 85.00000 -22.00000 85.00000 -21.99999) (net "GND2"))
+   (wire (path TOP 1.50000 82.00000 -22.00000 79.00001 -21.99999 79.00000 -22.00000)
+   (net "GND2"))
+  (wire (path TOP 1.50000 82.00000 -22.00000 82.00000 -21.99999) (net "GND2"))
+  (wire (path BOT 1.50000 68.00000 80.30000 68.00000 77.76000) (net "5V3A"))
+  (wire (path BOT 1.39700 85.08000 -84.00000 85.08000 -81.46000) (net "ENA"))
+  (wire (path BOT 1.39700 85.08000 -76.00000 85.08000 -73.46000) (net "ENB"))
+  (wire (path BOT 1.50000 70.54000 87.92000 70.54000 90.46000) (net "GND2"))
+  (wire (path BOT 1.50000 70.54000 85.38000 70.54000 87.92000) (net "GND2"))
+  (wire (path BOT 1.50000 70.54000 82.84000 70.54000 85.38000) (net "GND2"))
+  (wire (path BOT 1.50000 70.54000 80.30000 70.54000 82.84000) (net "GND2"))
+  (wire (path BOT 1.50000 70.54000 77.76000 70.54000 80.30000) (net "GND2"))
+  (wire (path BOT 1.50000 70.54000 90.46000 70.54000 90.46001) (net "GND2"))
+  (wire (path BOT 1.50000 70.54000 90.46000 70.54000 93.00000) (net "GND2"))
+   (wire (path BOT 1.50000 68.00000 93.00000 68.00000 90.46000) (net "5V3A") (type protect)
+  )
+   (wire (path BOT 1.50000 68.00000 87.92000 68.00000 85.38000) (net "5V3A") (type protect)
+  )
+   (wire (path BOT 1.50000 68.00000 82.84000 68.00000 80.30000) (net "5V3A") (type protect)
+  )
+   (wire (path BOT 1.50000 68.00000 85.38000 68.00000 82.84000) (net "5V3A") (type protect)
+  )
+   (wire (path BOT 1.50000 68.00000 90.46000 68.00000 87.92000) (net "5V3A") (type protect)
+  )
+   (wire (path BOT 1.50000 -0.54000 -38.00000 2.00000 -38.00000) (net "3V3NANO") (type protect)
+  )
+   (wire (path BOT 1.50000 2.00000 -38.00000 4.54000 -38.00000) (net "3V3NANO") (type protect)
+  )
+   (wire (path BOT 1.50000 4.54000 -38.00000 7.08000 -38.00000) (net "3V3NANO") (type protect)
+  )
+   (wire (path BOT 1.50000 4.54000 -35.46000 2.00000 -35.46000) (net "GND2") (type protect)
+  )
+   (wire (path BOT 1.50000 7.08000 -35.46000 4.54000 -35.46000) (net "GND2") (type protect)
+  )
+   (wire (path BOT 1.50000 2.00000 -35.46000 -0.54000 -35.46000) (net "GND2") (type protect)
+  )
   (via PS0 90.00000 90.00000 (net {NC-1}) (type protect))
   (via PS0 90.00000 -90.00000 (net {NC-2}) (type protect))
   (via PS0 -90.00000 90.00000 (net {NC-3}) (type protect))

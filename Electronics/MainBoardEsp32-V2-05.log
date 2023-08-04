@@ -1,3 +1,4 @@
+# Writing all output to: C:\Users\legion\Documents\SeekerUCB\Electronics\MainBoardEsp32-V2-05.log
 set pad_wire_necking on
 bus diagonal
 fanout 5
@@ -8,3 +9,4 @@ clean 2
 filter 5
 recorner diagonal
 status_file
+
