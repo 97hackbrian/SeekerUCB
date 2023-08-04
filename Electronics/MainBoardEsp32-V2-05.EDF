@@ -6,8 +6,8 @@
  (resolution mm 100000)
  (unit mm)
  (structure
-  (boundary (rect pcb -100.10160 -100.60160 110.22720 103.22720))
-  (boundary (path signal 0.20320 -100.00000 -100.00000 100.00000 -100.00000 100.00000 100.00000
+  (boundary (rect pcb -100.60160 -100.60160 110.22720 103.22720))
+  (boundary (path signal 0.20320 -100.00000 -100.00000 99.00000 -100.00000 99.00000 100.00000
    -100.00000 100.00000 -100.00000 -100.00000))
   (flip_style mirror_first)
   (layer TOP (type signal) (direction off))
@@ -26,11 +26,11 @@
   (layer I13 (type signal) (direction off))
   (layer I14 (type signal) (direction off))
   (layer BOT (type signal) (direction vertical))
-  (grid via  0.63500)
-  (grid wire 0.63500)
+  (grid via  0.50800)
+  (grid wire 0.50800)
   (control
    (via_at_smd off)
-   (off_grid on)
+   (off_grid off)
   )
   (via
    $VIA#0_SIGNAL
@@ -52,100 +52,103 @@
   )
  )
  (placement
-  (component FUSIBLE_FUS1 (place FUS1 -77.00000 -60.50000 front 0))
-  (component "TBLOCK-M2_J1" (place J1 -72.50000 -90.00000 front 180))
-  (component "STEP-UP/DOWN_SDOWN2" (place SDOWN2 27.50000 -72.50000 front 0))
-  (component "STEP-UP/DOWN_SDOWN1" (place SDOWN1 -52.50000 -72.50000 front 0))
-  (component "ARDUINO NANO_ARN1" (place ARN1 56.16000 -31.00000 front 0))
-  (component "TBLOCK-I2_MOSFETS VIN" (place "MOSFETS VIN" 9.00000 -86.00000 front -180
+  (component FUSIBLE_FUS1 (place FUS1 -77.00000 -62.50000 front -90))
+  (component "TBLOCK-M2_BATERY 12V" (place "BATERY 12V" -84.00380 -83.00000 front 0
   ))
-  (component "TBLOCK-I2_MOSLED1" (place MOSLED1 -85.00000 -47.50000 front 90))
-  (component "TBLOCK-I2_MOSLED2" (place MOSLED2 -85.00000 -32.50000 front 90))
-  (component "TBLOCK-I2_MOSLED3" (place MOSLED3 -85.00000 -17.50000 front 90))
-  (component "TBLOCK-I2_MOSLED4" (place MOSLED4 -85.00000 -2.50000 front 90))
-  (component "TBLOCK-I2_MOS-FAN" (place "MOS-FAN" -85.00000 12.50000 front 90))
-  (component "TBLOCK-I2_MOS-OUT2" (place "MOS-OUT2" -85.00000 27.50000 front 90))
-  (component "TBLOCK-I2_MOS-OUT3" (place "MOS-OUT3" -85.00000 42.50000 front 90))
-  (component "TBLOCK-I2_MOS-OUT4" (place "MOS-OUT4" -85.00000 57.50000 front 90))
-  (component TO220_Q1 (place Q1 -70.00000 32.50000 front 90))
-  (component TO220_Q2 (place Q2 -70.00000 47.50000 front 90))
-  (component TO220_Q3 (place Q3 -70.00000 62.50000 front 90))
-  (component TO220_Q4 (place Q4 -70.00000 17.50000 front 90))
-  (component TO220_Q7 (place Q7 -70.00000 -27.50000 front 90))
-  (component TO220_Q8 (place Q8 -70.00000 -12.50000 front 90))
-  (component TO220_Q9 (place Q9 -70.00000 2.50000 front 90))
-  (component TO220_Q6 (place Q6 -70.00000 -42.50000 front 90))
-  (component DO41_D8 (place D8 -76.00000 9.84000 front -270))
-  (component DO41_D2 (place D2 -76.00000 25.00000 front 90))
-  (component DO41_D4 (place D4 -76.00000 40.00000 front 90))
-  (component DO41_D6 (place D6 -76.00000 55.00000 front 90))
-  (component DO41_D9 (place D9 -76.00000 -50.00000 front 90))
-  (component DO41_D11 (place D11 -76.00000 -35.00000 front 90))
-  (component DO41_D13 (place D13 -76.00000 -20.00000 front 90))
-  (component DO41_D15 (place D15 -76.00000 -5.00000 front 90))
-  (component RES40_R3 (place R3 -61.00000 37.00000 front 270))
-  (component RES40_R4 (place R4 -65.00000 27.00000 front 90))
-  (component RES40_R5 (place R5 -61.00000 52.00000 front 270))
-  (component RES40_R6 (place R6 -65.00000 42.00000 front 90))
-  (component RES40_R8 (place R8 -61.00000 68.00000 front -90))
-  (component RES40_R10 (place R10 -65.00000 13.00000 front -270))
-  (component RES40_R12 (place R12 -65.00000 58.00000 front -270))
-  (component RES40_R15 (place R15 -65.00000 -48.00000 front -270))
-  (component RES40_R18 (place R18 -65.00000 -33.00000 front -270))
-  (component RES40_R21 (place R21 -65.00000 -18.00000 front -270))
-  (component RES40_R24 (place R24 -65.00000 -3.00000 front -270))
-  (component RES40_R9 (place R9 -61.00000 13.00000 front -270))
-  (component RES40_R23 (place R23 -61.00000 7.00000 front -90))
-  (component "ARDUINO NANO_ARN2" (place ARN2 -10.24000 92.24000 front 90))
-  (component RES40_R7 (place R7 -48.00000 52.00000 front -180))
-  (component RES40_R11 (place R11 -48.00000 37.00000 front -180))
-  (component RES40_R13 (place R13 -48.00000 68.00000 front -180))
-  (component RES40_R14 (place R14 -52.00000 -48.00000 front -180))
-  (component RES40_R17 (place R17 -52.00000 -33.00000 front -180))
-  (component RES40_R20 (place R20 -52.00000 -18.00000 front -180))
-  (component RES40_R25 (place R25 -48.00000 7.00000 front -180))
-  (component LED_D1 (place D1 -54.00000 46.00000 front -180))
-  (component LED_D3 (place D3 -54.00000 63.00000 front -180))
-  (component LED_D5 (place D5 -54.00000 32.00000 front -180))
-  (component LED_D7 (place D7 -54.00000 19.00000 front -180))
-  (component LED_D10 (place D10 -54.00000 3.00000 front -180))
-  (component LED_D12 (place D12 -54.00000 -11.00000 front -180))
-  (component LED_D14 (place D14 -54.00000 -26.00000 front -180))
-  (component LED_D16 (place D16 -54.00000 -41.00000 front -180))
-  (component TO92/18_Q5 (place Q5 16.02000 -8.30000 front 0))
-  (component RES40_R16 (place R16 -48.00000 3.00000 front -90))
-  (component RES40_R22 (place R22 -45.00000 -28.00000 front 90))
-  (component RES40_R19 (place R19 -42.00000 -17.00000 front 270))
-  (component "CONN-SIL3_SERVO1" (place SERVO1 91.00000 -16.92000 front 270))
-  (component "CONN-SIL3_SERVO2" (place SERVO2 88.00000 -16.92000 front 270))
-  (component "CONN-SIL3_SERVO3" (place SERVO3 85.00000 -16.92000 front 270))
-  (component "CONN-SIL3_SERVO4" (place SERVO4 82.00000 -16.92000 front 270))
-  (component "CONN-SIL3_SERVO5" (place SERVO5 79.00000 -16.92000 front 270))
-  (component MODULE_ESP32DEVKITC_ESP32 (place ESP32 34.29000 18.70000 front 90))
-  (component "CONN-DIL8_3V3 ESP32" (place "3V3 ESP32" -10.79000 15.70000 front 0))
-  (component "CONN-DIL8_3V3 NANOS" (place "3V3 NANOS" -0.54000 -38.00000 front 0))
-  (component "TBLOCK-I2_5V 3A SENSORS" (place "5V 3A SENSORS" 91.00000 77.00000 front 270
+  (component "STEP-UP/DOWN_SDOWN2" (place SDOWN2 11.00000 -66.00000 front 0))
+  (component "STEP-UP/DOWN_SDOWN1" (place SDOWN1 -35.00000 -66.00000 front 0))
+  (component "ARDUINO NANO_ARN1" (place ARN1 56.16000 -27.00000 front 0))
+  (component "TBLOCK-I2_MOSFETS-VIN" (place "MOSFETS-VIN" -48.08000 -81.00000 front 0
   ))
-  (component "CONN-DIL8_CONTROL-MOTOR-A" (place "CONTROL-MOTOR-A" 80.00000 -84.00000 front 0
+  (component "TBLOCK-I2_MOSLED1" (place MOSLED1 -80.00000 67.50000 front 90))
+  (component "TBLOCK-I2_MOSLED2" (place MOSLED2 -80.00000 50.50000 front 90))
+  (component "TBLOCK-I2_MOSLED3" (place MOSLED3 -80.00000 33.50000 front 90))
+  (component "TBLOCK-I2_MOSLED4" (place MOSLED4 -80.00000 16.00000 front 90))
+  (component "TBLOCK-I2_MOS-FAN" (place "MOS-FAN" -80.00000 -1.50000 front 90))
+  (component "TBLOCK-I2_MOS-OUT2" (place "MOS-OUT2" -80.00000 -18.50000 front 90))
+  (component "TBLOCK-I2_MOS-OUT3" (place "MOS-OUT3" -80.00000 -35.50000 front 90))
+  (component "TBLOCK-I2_MOS-OUT4" (place "MOS-OUT4" -80.00000 -52.04000 front 90))
+  (component TO220_Q1 (place Q1 -58.00000 -16.54000 front 270))
+  (component TO220_Q2 (place Q2 -58.00000 -33.46000 front 270))
+  (component TO220_Q3 (place Q3 -58.00000 -49.54000 front 270))
+  (component TO220_Q4 (place Q4 -58.00000 1.54000 front 270))
+  (component TO220_Q7 (place Q7 -58.00000 54.54000 front 270))
+  (component TO220_Q8 (place Q8 -58.00000 37.54000 front 270))
+  (component TO220_Q9 (place Q9 -58.00000 19.54000 front 270))
+  (component TO220_Q6 (place Q6 -58.00000 71.54000 front 270))
+  (component DO41_D8 (place D8 -65.00000 -4.16000 front 90))
+  (component DO41_D2 (place D2 -65.00000 -22.00000 front 90))
+  (component DO41_D4 (place D4 -65.00000 -39.00000 front 90))
+  (component DO41_D6 (place D6 -65.00000 -54.54000 front 90))
+  (component DO41_D9 (place D9 -65.00000 65.00000 front 90))
+  (component DO41_D11 (place D11 -65.00000 48.00000 front 90))
+  (component DO41_D13 (place D13 -65.00000 31.00000 front 90))
+  (component DO41_D15 (place D15 -65.00000 13.50000 front 90))
+  (component RES40_R3 (place R3 -42.00000 -22.16000 front 90))
+  (component RES40_R4 (place R4 -47.00000 -12.00000 front 270))
+  (component RES40_R5 (place R5 -42.00000 -39.16000 front 90))
+  (component RES40_R6 (place R6 -47.00000 -29.00000 front 270))
+  (component RES40_R8 (place R8 -42.00000 -54.70000 front 90))
+  (component RES40_R10 (place R10 -47.00000 6.16000 front 270))
+  (component RES40_R12 (place R12 -47.00000 -45.00000 front 270))
+  (component RES40_R15 (place R15 -47.00000 76.16000 front 270))
+  (component RES40_R18 (place R18 -47.00000 59.16000 front 270))
+  (component RES40_R21 (place R21 -47.00000 42.00000 front 270))
+  (component RES40_R24 (place R24 -47.00000 24.16000 front 270))
+  (component RES40_R9 (place R9 -42.00000 6.16000 front 270))
+  (component RES40_R23 (place R23 -42.00000 14.00000 front 90))
+  (component "ARDUINO NANO_ARN2" (place ARN2 -14.24000 92.70000 front 90))
+  (component RES40_R7 (place R7 -39.00000 -29.00000 front 270))
+  (component RES40_R11 (place R11 -39.00000 -12.00000 front 270))
+  (component RES40_R13 (place R13 -39.00000 -44.54000 front 270))
+  (component RES40_R14 (place R14 -42.00000 66.00000 front 90))
+  (component RES40_R17 (place R17 -42.00000 48.84000 front 90))
+  (component RES40_R20 (place R20 -42.00000 32.00000 front 90))
+  (component RES40_R25 (place R25 -39.00000 24.16000 front 270))
+  (component LED_D1 (place D1 -33.00000 -17.00000 front 270))
+  (component LED_D3 (place D3 -33.00000 -33.00000 front 270))
+  (component LED_D5 (place D5 -33.00000 -48.54000 front 270))
+  (component LED_D7 (place D7 -33.00000 -4.00000 front 90))
+  (component LED_D10 (place D10 -34.00000 71.54000 front 270))
+  (component LED_D12 (place D12 -34.00000 54.54000 front 270))
+  (component LED_D14 (place D14 -34.00000 37.54000 front 270))
+  (component LED_D16 (place D16 -34.00000 19.54000 front 270))
+  (component TO92/18_Q5 (place Q5 20.34000 16.27000 front 180))
+  (component RES40_R16 (place R16 -39.00000 76.00000 front -90))
+  (component RES40_R22 (place R22 -39.00000 42.16000 front 270))
+  (component RES40_R19 (place R19 -39.00000 59.16000 front 270))
+  (component "CONN-SIL3_SERVO1" (place SERVO1 53.00000 -20.00000 front 90))
+  (component "CONN-SIL3_SERVO2" (place SERVO2 50.00000 -20.08000 front 90))
+  (component "CONN-SIL3_SERVO3" (place SERVO3 47.00000 -20.00000 front 90))
+  (component "CONN-SIL3_SERVO4" (place SERVO4 44.00000 -20.00000 front 90))
+  (component "CONN-SIL3_SERVO5" (place SERVO5 41.00000 -20.08000 front 90))
+  (component MODULE_ESP32DEVKITC_ESP32 (place ESP32 28.13000 21.70000 front 90))
+  (component "TBLOCK-I2_5V 3A SENSORS" (place "5V 3A SENSORS" 84.00000 51.00000 front 90
   ))
-  (component "CONN-DIL8_CONTROL-MOTOR-B" (place "CONTROL-MOTOR-B" 80.00000 -76.00000 front 0
+  (component "CONN-DIL8_CONTROL-MOTOR-A" (place "CONTROL-MOTOR-A" 89.00000 -81.00000 front 90
   ))
-  (component "CONN-SIL6_EXTRA1" (place EXTRA1 43.29000 -17.30000 front 180))
-  (component "CONN-SIL4_EXTRA2" (place EXTRA2 56.92000 69.00000 front 0))
-  (component "CONN-SIL3_MOSFET DRIVER 1" (place "MOSFET DRIVER 1" 54.38000 93.00000 front 0
+  (component "CONN-DIL8_CONTROL-MOTOR-B" (place "CONTROL-MOTOR-B" 66.38000 -92.00000 front 0
   ))
-  (component "CONN-SIL3_MOSFET DRIVER 2" (place "MOSFET DRIVER 2" 95.00000 -62.92000 front -90
+  (component "CONN-SIL6_EXTRA1" (place EXTRA1 36.13000 0.70000 front 180))
+  (component "CONN-SIL4_EXTRA2" (place EXTRA2 30.22000 40.00000 front 0))
+  (component "TBLOCK-I3_MOSFET DRIVER 1-HOOTER" (place "MOSFET DRIVER 1-HOOTER" 53.84000 87.00000 front 0
   ))
-  (component "TBLOCK-M6_PINES ANALOGICOS" (place "PINES ANALOGICOS" -30.00640 94.00000 front -180
+  (component "TBLOCK-I3_MOSFET DRIVER 2-ELECT" (place "MOSFET DRIVER 2-ELECT" 83.00000 -48.84000 front -90
   ))
-  (component "TBLOCK-M6_PINES DIGITALES" (place "PINES DIGITALES" 40.00000 94.00000 front -180
+  (component "TBLOCK-M6_PINES ANALOGICOS" (place "PINES ANALOGICOS" -51.00000 90.00000 front -180
   ))
-  (component RES40_R1 (place R1 -17.00000 69.00000 front -90))
-  (component RES40_R2 (place R2 -26.00000 69.00000 front -90))
-  (component "CONN-DIL14_VIN 5" (place "VIN 5" 68.00000 93.00000 front -90))
-  (component "TBLOCK-I2_XL4015 5V 5A" (place "XL4015 5V 5A" 87.00000 -9.00000 front 90
+  (component "TBLOCK-M6_PINES DIGITALES" (place "PINES DIGITALES" 45.00000 88.00000 front -180
   ))
-  (component "TBLOCK-I2_LM2596 5V 3A" (place "LM2596 5V 3A" -70.00000 92.50000 front 180
+  (component RES40_R1 (place R1 10.16000 36.84000 front 90))
+  (component RES40_R2 (place R2 18.16000 37.00000 front 90))
+  (component "CONN-DIL14_VIN 5" (place "VIN 5" 78.54000 95.08000 front -90))
+  (component "TBLOCK-I2_XL4015 5V 5A SER" (place "XL4015 5V 5A SER" 75.00000 -3.00000 front 90
+  ))
+  (component "TBLOCK-I2_LM2596 5V 3A MOSF" (place "LM2596 5V 3A MOSF" 84.00000 36.00000 front 90
+  ))
+  (component "TBLOCK-I2_CENTRALSENSOR-VIN" (place "CENTRALSENSOR-VIN" -68.00000 -81.00000 front 0
+  ))
+  (component "TBLOCK-I2_SENSORS VCC" (place "SENSORS VCC" 84.00000 66.00000 front 90
   ))
  )
  (library
@@ -156,7 +159,7 @@
    (pin PS1 (rotate 0) 2 0.00000 -14.50000)
    (pin PS1 (rotate 0) 3 4.50000 -14.50000)
   )
-  (image "TBLOCK-M2_J1" (side front)
+  (image "TBLOCK-M2_BATERY 12V" (side front)
    (outline (rect TOP -2.64160 -3.91160 7.72160 3.91160))
    (pin PS2 (rotate 0) 0 0.00000 0.00000)
    (pin PS2 (rotate 0) 1 5.00380 0.00000)
@@ -208,7 +211,7 @@
    (pin PS4 (rotate -90) 28 -2.54000 -15.24000)
    (pin PS4 (rotate -90) 29 0.00000 -15.24000)
   )
-  (image "TBLOCK-I2_MOSFETS VIN" (side front)
+  (image "TBLOCK-I2_MOSFETS-VIN" (side front)
    (outline (rect TOP -2.64160 -5.18160 7.72160 5.18160))
    (pin PS2 (rotate 0) 0 0.00000 0.00000)
    (pin PS2 (rotate 0) 1 5.08000 0.00000)
@@ -606,28 +609,6 @@
    (pin PS10 (rotate 0) 36 12.70000 20.31000)
    (pin PS10 (rotate 0) 37 12.70000 22.85000)
   )
-  (image "CONN-DIL8_3V3 ESP32" (side front)
-   (outline (rect TOP -1.37160 -1.37160 8.99160 3.91160))
-   (pin PS5 (rotate 0) 0 0.00000 0.00000)
-   (pin PS5 (rotate 0) 1 2.54000 0.00000)
-   (pin PS5 (rotate 0) 2 5.08000 0.00000)
-   (pin PS5 (rotate 0) 3 7.62000 0.00000)
-   (pin PS5 (rotate 0) 4 7.62000 2.54000)
-   (pin PS5 (rotate 0) 5 5.08000 2.54000)
-   (pin PS5 (rotate 0) 6 2.54000 2.54000)
-   (pin PS5 (rotate 0) 7 0.00000 2.54000)
-  )
-  (image "CONN-DIL8_3V3 NANOS" (side front)
-   (outline (rect TOP -1.37160 -1.37160 8.99160 3.91160))
-   (pin PS5 (rotate 0) 0 0.00000 0.00000)
-   (pin PS5 (rotate 0) 1 2.54000 0.00000)
-   (pin PS5 (rotate 0) 2 5.08000 0.00000)
-   (pin PS5 (rotate 0) 3 7.62000 0.00000)
-   (pin PS5 (rotate 0) 4 7.62000 2.54000)
-   (pin PS5 (rotate 0) 5 5.08000 2.54000)
-   (pin PS5 (rotate 0) 6 2.54000 2.54000)
-   (pin PS5 (rotate 0) 7 0.00000 2.54000)
-  )
   (image "TBLOCK-I2_5V 3A SENSORS" (side front)
    (outline (rect TOP -2.64160 -5.18160 7.72160 5.18160))
    (pin PS2 (rotate 0) 0 0.00000 0.00000)
@@ -671,17 +652,17 @@
    (pin PS5 (rotate 0) 2 5.08000 0.00000)
    (pin PS5 (rotate 0) 3 7.62000 0.00000)
   )
-  (image "CONN-SIL3_MOSFET DRIVER 1" (side front)
-   (outline (rect TOP -1.37160 -1.37160 6.45160 1.37160))
-   (pin PS5 (rotate 0) 0 0.00000 0.00000)
-   (pin PS5 (rotate 0) 1 2.54000 0.00000)
-   (pin PS5 (rotate 0) 2 5.08000 0.00000)
+  (image "TBLOCK-I3_MOSFET DRIVER 1-HOOTER" (side front)
+   (outline (rect TOP -2.64160 -5.18160 12.80160 5.18160))
+   (pin PS2 (rotate 0) 0 0.00000 0.00000)
+   (pin PS2 (rotate 0) 1 5.08000 0.00000)
+   (pin PS2 (rotate 0) 2 10.16000 0.00000)
   )
-  (image "CONN-SIL3_MOSFET DRIVER 2" (side front)
-   (outline (rect TOP -1.37160 -1.37160 6.45160 1.37160))
-   (pin PS5 (rotate 0) 0 0.00000 0.00000)
-   (pin PS5 (rotate 0) 1 2.54000 0.00000)
-   (pin PS5 (rotate 0) 2 5.08000 0.00000)
+  (image "TBLOCK-I3_MOSFET DRIVER 2-ELECT" (side front)
+   (outline (rect TOP -2.64160 -5.18160 12.80160 5.18160))
+   (pin PS2 (rotate 0) 0 0.00000 0.00000)
+   (pin PS2 (rotate 0) 1 5.08000 0.00000)
+   (pin PS2 (rotate 0) 2 10.16000 0.00000)
   )
   (image "TBLOCK-M6_PINES ANALOGICOS" (side front)
    (outline (rect TOP -2.64160 -3.91160 27.40660 3.91160))
@@ -728,12 +709,22 @@
    (pin PS5 (rotate 0) 12 2.54000 2.54000)
    (pin PS5 (rotate 0) 13 0.00000 2.54000)
   )
-  (image "TBLOCK-I2_XL4015 5V 5A" (side front)
+  (image "TBLOCK-I2_XL4015 5V 5A SER" (side front)
    (outline (rect TOP -2.64160 -5.18160 7.72160 5.18160))
    (pin PS2 (rotate 0) 0 0.00000 0.00000)
    (pin PS2 (rotate 0) 1 5.08000 0.00000)
   )
-  (image "TBLOCK-I2_LM2596 5V 3A" (side front)
+  (image "TBLOCK-I2_LM2596 5V 3A MOSF" (side front)
+   (outline (rect TOP -2.64160 -5.18160 7.72160 5.18160))
+   (pin PS2 (rotate 0) 0 0.00000 0.00000)
+   (pin PS2 (rotate 0) 1 5.08000 0.00000)
+  )
+  (image "TBLOCK-I2_CENTRALSENSOR-VIN" (side front)
+   (outline (rect TOP -2.64160 -5.18160 7.72160 5.18160))
+   (pin PS2 (rotate 0) 0 0.00000 0.00000)
+   (pin PS2 (rotate 0) 1 5.08000 0.00000)
+  )
+  (image "TBLOCK-I2_SENSORS VCC" (side front)
    (outline (rect TOP -2.64160 -5.18160 7.72160 5.18160))
    (pin PS2 (rotate 0) 0 0.00000 0.00000)
    (pin PS2 (rotate 0) 1 5.08000 0.00000)
@@ -1082,16 +1073,16 @@
    )
    (pins ESP32-25 EXTRA2-2)
   )
-  (net "#00099"
+  (net "#00098"
    (circuit
     (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
    )
-   (pins FUS1-2 J1-1)
+   (pins FUS1-2 "BATERY 12V"-0)
   )
-  (net "#00128"
+  (net "#00124"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1100,7 +1091,7 @@
    )
    (pins "MOS-OUT2"-1 Q1-1 D2-0)
   )
-  (net "#00129"
+  (net "#00125"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1109,7 +1100,7 @@
    )
    (pins Q1-0 R3-1 R4-0)
   )
-  (net "#00132"
+  (net "#00128"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1118,7 +1109,7 @@
    )
    (pins R11-0 D1-0)
   )
-  (net "#00161"
+  (net "#00157"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1127,7 +1118,7 @@
    )
    (pins "MOS-OUT3"-1 Q2-1 D4-0)
   )
-  (net "#00162"
+  (net "#00158"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1136,7 +1127,7 @@
    )
    (pins Q2-0 R5-1 R6-0)
   )
-  (net "#00166"
+  (net "#00162"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1145,7 +1136,7 @@
    )
    (pins "MOS-OUT4"-1 Q3-1 D6-0)
   )
-  (net "#00167"
+  (net "#00163"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1154,7 +1145,7 @@
    )
    (pins Q3-0 R8-1 R12-0)
   )
-  (net "#00171"
+  (net "#00167"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1163,7 +1154,7 @@
    )
    (pins "MOS-FAN"-1 Q4-1 D8-0)
   )
-  (net "#00172"
+  (net "#00168"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1172,7 +1163,7 @@
    )
    (pins Q4-0 R10-0 R9-0 Q5-2)
   )
-  (net "#00174"
+  (net "#00170"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1181,7 +1172,7 @@
    )
    (pins R9-1 D7-0)
   )
-  (net "#00180"
+  (net "#00176"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1190,7 +1181,7 @@
    )
    (pins R7-0 D3-0)
   )
-  (net "#00181"
+  (net "#00177"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1199,7 +1190,7 @@
    )
    (pins R13-0 D5-0)
   )
-  (net "#00182"
+  (net "#00178"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1208,7 +1199,7 @@
    )
    (pins MOSLED1-1 Q6-1 D9-0)
   )
-  (net "#00183"
+  (net "#00179"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1217,7 +1208,7 @@
    )
    (pins Q6-0 R15-0 R14-1)
   )
-  (net "#00187"
+  (net "#00183"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1226,7 +1217,7 @@
    )
    (pins D10-0 R16-0)
   )
-  (net "#00200"
+  (net "#00196"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1235,7 +1226,7 @@
    )
    (pins MOSLED2-1 Q7-1 D11-0)
   )
-  (net "#00201"
+  (net "#00197"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1244,7 +1235,7 @@
    )
    (pins Q7-0 R18-0 R17-1)
   )
-  (net "#00205"
+  (net "#00201"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1253,7 +1244,7 @@
    )
    (pins D12-0 R19-0)
   )
-  (net "#00206"
+  (net "#00202"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1262,7 +1253,7 @@
    )
    (pins MOSLED3-1 Q8-1 D13-0)
   )
-  (net "#00207"
+  (net "#00203"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1271,7 +1262,7 @@
    )
    (pins Q8-0 R21-0 R20-1)
   )
-  (net "#00211"
+  (net "#00207"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1280,7 +1271,7 @@
    )
    (pins D14-0 R22-0)
   )
-  (net "#00212"
+  (net "#00208"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1289,7 +1280,7 @@
    )
    (pins MOSLED4-1 Q9-1 D15-0)
   )
-  (net "#00213"
+  (net "#00209"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1298,7 +1289,7 @@
    )
    (pins Q9-0 R24-0 R23-1)
   )
-  (net "#00217"
+  (net "#00213"
    (circuit
     (use_layer BOT)
     (use_via
@@ -1314,18 +1305,9 @@
      $VIA#0_POWER
     )
    )
-    (pins FUS1-0 SDOWN2-0 SDOWN1-0 "MOSFETS VIN"-0 MOSLED1-0 MOSLED2-0 MOSLED3-0 MOSLED4-0
+    (pins FUS1-0 SDOWN2-0 SDOWN1-0 "MOSFETS-VIN"-0 MOSLED1-0 MOSLED2-0 MOSLED3-0 MOSLED4-0
      "MOS-FAN"-0 "MOS-OUT2"-0 "MOS-OUT3"-0 "MOS-OUT4"-0 D8-1 D2-1 D4-1 D6-1 D9-1 D11-1
-    D13-1 D15-1)
-  )
-  (net "3V3ESP32"
-   (circuit
-    (use_layer BOT)
-    (use_via
-     $VIA#0_POWER
-    )
-   )
-   (pins ESP32-0 "3V3 ESP32"-0 "3V3 ESP32"-1 "3V3 ESP32"-2 "3V3 ESP32"-3)
+    D13-1 D15-1 "CENTRALSENSOR-VIN"-0)
   )
   (net "3V3NANO"
    (circuit
@@ -1334,7 +1316,7 @@
      $VIA#0_POWER
     )
    )
-   (pins ARN1-1 ARN2-1 "3V3 NANOS"-0 "3V3 NANOS"-1 "3V3 NANOS"-2 "3V3 NANOS"-3)
+   (pins ARN1-1 ARN2-1)
   )
   (net "5V3A"
    (circuit
@@ -1344,7 +1326,7 @@
     )
    )
     (pins "5V 3A SENSORS"-0 "VIN 5"-0 "VIN 5"-1 "VIN 5"-2 "VIN 5"-3 "VIN 5"-4 "VIN 5"-5
-    "VIN 5"-6)
+    "VIN 5"-6 "SENSORS VCC"-0)
   )
   (net "5V5ASERV"
    (circuit
@@ -1353,7 +1335,7 @@
      $VIA#0_POWER
     )
    )
-   (pins SERVO1-1 SERVO2-1 SERVO3-1 SERVO4-1 SERVO5-1 "XL4015 5V 5A"-0)
+   (pins SERVO1-1 SERVO2-1 SERVO3-1 SERVO4-1 SERVO5-1 "XL4015 5V 5A SER"-0)
   )
   (net "5VMCU"
    (circuit
@@ -1371,7 +1353,8 @@
      $VIA#0_POWER
     )
    )
-   (pins Q5-0 "MOSFET DRIVER 1"-1 "MOSFET DRIVER 2"-1 "LM2596 5V 3A"-0)
+    (pins Q5-0 "MOSFET DRIVER 1-HOOTER"-1 "MOSFET DRIVER 2-ELECT"-1 "LM2596 5V 3A MOSF"-0
+   )
   )
   (net "5VMOT"
    (circuit
@@ -1416,7 +1399,9 @@
      $VIA#0_POWER
     )
    )
-   (pins J1-0 SDOWN2-1 SDOWN1-1)
+    (pins "BATERY 12V"-1 SDOWN2-1 SDOWN1-1 "MOSFETS-VIN"-1 Q1-2 Q2-2 Q3-2 Q4-2 Q7-2 Q8-2
+     Q9-2 Q6-2 R4-1 R6-1 R10-1 R12-1 R15-1 R18-1 R21-1 R24-1 D1-1 D3-1 D5-1 D7-1 D10-1
+    D12-1 D14-1 D16-1 "CENTRALSENSOR-VIN"-1)
   )
   (net "GND2"
    (circuit
@@ -1425,13 +1410,11 @@
      $VIA#0_POWER
     )
    )
-    (pins SDOWN2-3 SDOWN1-3 ARN1-13 ARN1-18 "MOSFETS VIN"-1 Q1-2 Q2-2 Q3-2 Q4-2 Q7-2 Q8-2
-     Q9-2 Q6-2 R4-1 R6-1 R10-1 R12-1 R15-1 R18-1 R21-1 R24-1 ARN2-13 ARN2-18 D1-1 D3-1
-     D5-1 D7-1 D10-1 D12-1 D14-1 D16-1 SERVO1-2 SERVO2-2 SERVO3-2 SERVO4-2 SERVO5-2 ESP32-13
-     "3V3 ESP32"-4 "3V3 ESP32"-5 "3V3 ESP32"-6 "3V3 ESP32"-7 "3V3 NANOS"-4 "3V3 NANOS"-5
-     "3V3 NANOS"-6 "3V3 NANOS"-7 "5V 3A SENSORS"-1 "CONTROL-MOTOR-A"-0 "CONTROL-MOTOR-B"-0
-     "MOSFET DRIVER 1"-2 "MOSFET DRIVER 2"-2 "VIN 5"-7 "VIN 5"-8 "VIN 5"-9 "VIN 5"-10
-    "VIN 5"-11 "VIN 5"-12 "VIN 5"-13 "XL4015 5V 5A"-1 "LM2596 5V 3A"-1)
+    (pins SDOWN2-3 SDOWN1-3 ARN1-13 ARN1-18 ARN2-13 ARN2-18 SERVO1-2 SERVO2-2 SERVO3-2
+     SERVO4-2 SERVO5-2 ESP32-13 "5V 3A SENSORS"-1 "CONTROL-MOTOR-A"-0 "CONTROL-MOTOR-B"-0
+     "MOSFET DRIVER 1-HOOTER"-2 "MOSFET DRIVER 2-ELECT"-2 "VIN 5"-7 "VIN 5"-8 "VIN 5"-9
+     "VIN 5"-10 "VIN 5"-11 "VIN 5"-12 "VIN 5"-13 "XL4015 5V 5A SER"-1 "LM2596 5V 3A MOSF"-1
+    "SENSORS VCC"-1)
   )
   (net "HOOTER"
    (circuit
@@ -1440,7 +1423,7 @@
      $VIA#0_SIGNAL
     )
    )
-   (pins ARN2-29 "MOSFET DRIVER 1"-0)
+   (pins ARN2-29 "MOSFET DRIVER 1-HOOTER"-0)
   )
   (net "LED1"
    (circuit
@@ -1503,7 +1486,7 @@
      $VIA#0_SIGNAL
     )
    )
-   (pins ARN1-19 "MOSFET DRIVER 2"-0)
+   (pins ARN1-19 "MOSFET DRIVER 2-ELECT"-0)
   )
   (net "MOS2"
    (circuit
@@ -1723,7 +1706,6 @@
   )
   (class POWER
    "12BAT"
-   "3V3ESP32"
    "3V3NANO"
    "5V3A"
    "5V5ASERV"
@@ -1757,31 +1739,31 @@
    "#00079"
    "#00081"
    "#00084"
-   "#00099"
+   "#00098"
+   "#00124"
+   "#00125"
    "#00128"
-   "#00129"
-   "#00132"
-   "#00161"
+   "#00157"
+   "#00158"
    "#00162"
-   "#00166"
+   "#00163"
    "#00167"
-   "#00171"
-   "#00172"
-   "#00174"
-   "#00180"
-   "#00181"
-   "#00182"
+   "#00168"
+   "#00170"
+   "#00176"
+   "#00177"
+   "#00178"
+   "#00179"
    "#00183"
-   "#00187"
-   "#00200"
+   "#00196"
+   "#00197"
    "#00201"
-   "#00205"
-   "#00206"
+   "#00202"
+   "#00203"
    "#00207"
-   "#00211"
-   "#00212"
+   "#00208"
+   "#00209"
    "#00213"
-   "#00217"
    "ENA"
    "ENB"
    "FAN-C"
@@ -1833,55 +1815,26 @@
   )
  )
  (wiring
-  (wire (path TOP 1.50000 88.00000 -19.46000 85.00000 -19.46000) (net "5V5ASERV"))
-   (wire (path TOP 1.50000 91.00000 -19.46000 90.99999 -19.45999 88.00000 -19.46000)
-   (net "5V5ASERV"))
-  (wire (path TOP 1.50000 85.00000 -19.46000 82.00000 -19.46000) (net "5V5ASERV"))
-  (wire (path TOP 1.50000 88.00000 -19.46000 88.00000 -19.45999) (net "5V5ASERV"))
-   (wire (path TOP 1.50000 82.00000 -19.46000 79.00001 -19.45999 79.00000 -19.46000)
-   (net "5V5ASERV"))
-  (wire (path TOP 1.50000 85.00000 -19.46000 85.00000 -19.45999) (net "5V5ASERV"))
-  (wire (path TOP 1.50000 82.00000 -19.46000 82.00000 -19.45999) (net "5V5ASERV"))
-   (wire (path TOP 1.50000 91.00000 -22.00000 90.99999 -21.99999 88.00000 -22.00000)
-   (net "GND2"))
-  (wire (path TOP 1.50000 88.00000 -21.99999 85.00000 -22.00000) (net "GND2"))
-  (wire (path TOP 1.50000 88.00000 -22.00000 88.00000 -21.99999) (net "GND2"))
-  (wire (path TOP 1.50000 85.00000 -21.99999 82.00000 -22.00000) (net "GND2"))
-  (wire (path TOP 1.50000 85.00000 -22.00000 85.00000 -21.99999) (net "GND2"))
-   (wire (path TOP 1.50000 82.00000 -22.00000 79.00001 -21.99999 79.00000 -22.00000)
-   (net "GND2"))
-  (wire (path TOP 1.50000 82.00000 -22.00000 82.00000 -21.99999) (net "GND2"))
-  (wire (path BOT 1.50000 68.00000 80.30000 68.00000 77.76000) (net "5V3A"))
-  (wire (path BOT 1.39700 85.08000 -84.00000 85.08000 -81.46000) (net "ENA"))
-  (wire (path BOT 1.39700 85.08000 -76.00000 85.08000 -73.46000) (net "ENB"))
-  (wire (path BOT 1.50000 70.54000 87.92000 70.54000 90.46000) (net "GND2"))
-  (wire (path BOT 1.50000 70.54000 85.38000 70.54000 87.92000) (net "GND2"))
-  (wire (path BOT 1.50000 70.54000 82.84000 70.54000 85.38000) (net "GND2"))
-  (wire (path BOT 1.50000 70.54000 80.30000 70.54000 82.84000) (net "GND2"))
-  (wire (path BOT 1.50000 70.54000 77.76000 70.54000 80.30000) (net "GND2"))
-  (wire (path BOT 1.50000 70.54000 90.46000 70.54000 90.46001) (net "GND2"))
-  (wire (path BOT 1.50000 70.54000 90.46000 70.54000 93.00000) (net "GND2"))
-   (wire (path BOT 1.50000 68.00000 93.00000 68.00000 90.46000) (net "5V3A") (type protect)
+  (wire (path TOP 1.50000 50.00000 -17.54000 50.00000 -17.53999) (net "5V5ASERV"))
+  (wire (path TOP 1.50000 47.00000 -17.46000 47.00000 -17.45999) (net "5V5ASERV"))
+  (wire (path TOP 1.50000 44.00000 -17.46000 44.00000 -17.45999) (net "5V5ASERV"))
+  (wire (path BOT 1.50000 78.54000 82.38000 78.54000 79.84000) (net "5V3A"))
+  (wire (path BOT 1.50000 81.08000 90.00000 81.08000 92.54000) (net "GND2"))
+  (wire (path BOT 1.50000 81.08000 87.46000 81.08000 90.00000) (net "GND2"))
+  (wire (path BOT 1.50000 81.08000 84.92000 81.08000 87.46000) (net "GND2"))
+  (wire (path BOT 1.50000 81.08000 82.38000 81.08000 84.92000) (net "GND2"))
+  (wire (path BOT 1.50000 81.08000 79.84000 81.08000 82.38000) (net "GND2"))
+  (wire (path BOT 1.50000 81.08000 92.54000 81.08000 92.54001) (net "GND2"))
+  (wire (path BOT 1.50000 81.08000 92.54000 81.08000 95.08000) (net "GND2"))
+   (wire (path BOT 1.50000 78.54000 95.08000 78.54000 92.54000) (net "5V3A") (type protect)
   )
-   (wire (path BOT 1.50000 68.00000 87.92000 68.00000 85.38000) (net "5V3A") (type protect)
+   (wire (path BOT 1.50000 78.54000 90.00000 78.54000 87.46000) (net "5V3A") (type protect)
   )
-   (wire (path BOT 1.50000 68.00000 82.84000 68.00000 80.30000) (net "5V3A") (type protect)
+   (wire (path BOT 1.50000 78.54000 84.92000 78.54000 82.38000) (net "5V3A") (type protect)
   )
-   (wire (path BOT 1.50000 68.00000 85.38000 68.00000 82.84000) (net "5V3A") (type protect)
+   (wire (path BOT 1.50000 78.54000 87.46000 78.54000 84.92000) (net "5V3A") (type protect)
   )
-   (wire (path BOT 1.50000 68.00000 90.46000 68.00000 87.92000) (net "5V3A") (type protect)
-  )
-   (wire (path BOT 1.50000 -0.54000 -38.00000 2.00000 -38.00000) (net "3V3NANO") (type protect)
-  )
-   (wire (path BOT 1.50000 2.00000 -38.00000 4.54000 -38.00000) (net "3V3NANO") (type protect)
-  )
-   (wire (path BOT 1.50000 4.54000 -38.00000 7.08000 -38.00000) (net "3V3NANO") (type protect)
-  )
-   (wire (path BOT 1.50000 4.54000 -35.46000 2.00000 -35.46000) (net "GND2") (type protect)
-  )
-   (wire (path BOT 1.50000 7.08000 -35.46000 4.54000 -35.46000) (net "GND2") (type protect)
-  )
-   (wire (path BOT 1.50000 2.00000 -35.46000 -0.54000 -35.46000) (net "GND2") (type protect)
+   (wire (path BOT 1.50000 78.54000 92.54000 78.54000 90.00000) (net "5V3A") (type protect)
   )
   (via PS0 90.00000 90.00000 (net {NC-1}) (type protect))
   (via PS0 90.00000 -90.00000 (net {NC-2}) (type protect))

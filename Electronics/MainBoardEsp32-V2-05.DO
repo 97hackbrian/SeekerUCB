@@ -1,10 +1,28 @@
 set pad_wire_necking on
 bus diagonal
-fanout 5
-route 50
-clean 2
-route 50 16
-clean 2
-filter 5
+fanout 10
+route 10
+clean 10
+route 10 16
+clean 10
+route 10 16
+clean 10
+route 10 16
+clean 10
+route 10 16
+clean 10
+route 10 16
+clean 10
+route 10 16
+clean 10
+route 10 16
+clean 10
+route 10 16
+clean 10
+route 10 16
+clean 10
+route 10 16
+clean 10
+filter 2
 recorner diagonal
 status_file
