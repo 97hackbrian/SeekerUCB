@@ -1,0 +1,7 @@
+{
+    "port": "/dev/ttyUSB0",
+    "configuration": "cpu=atmega328",
+    "board": "arduino:avr:nano",
+    "programmer": "arduino:avrisp",
+    "sketch": "Codes/examples/Motors/Motors.ino"
+}
