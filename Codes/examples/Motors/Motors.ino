@@ -16,8 +16,12 @@ void setup() {
 
 void loop() {
   // Move the motors, for example:
-  motor.move(100, 100); // Move forward with both wheels at speed 100
-  delay(3000); // Keep moving for 3 second
+  motor.move(255, 255); // Move forward with both wheels at speed 100
+  delay(800); // Keep moving for 3 second
+  
+
+  motor.move(-255, -255); // Move forward with both wheels at speed 100
+  delay(800); // Keep moving for 3 second
   motor.move(0, 0); // Stop the motors
-  delay(3000); // Wait for 3 second
+  delay(10000); // Wait for 3 second
 }
