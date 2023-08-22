@@ -79,9 +79,9 @@ void loop() {
   DirLeft = constrain (DirLeft, 50 , 240 );
   DirRigh = constrain (DirRigh ,50, 240 );*/
 
-  if (Run && (Left||Right||Up) ){
+  if (Run && (Left||Right||Up)&&Val>0 ){
     if(Up&&!Left&&!Right){
-      motor.move((-Val)  , (Val));
+      motor.move((Val)  , (Val));
     }
     else if (Left&&!Up&&!Right)
     {
@@ -123,7 +123,7 @@ void loop() {
 */
 
 //bajar
-  if(D_B==true&&!Run){
+  if(DG==true&&!Run){
     digitalWrite(ho,LOW);
     //bajar
     //servo1.write(190);
@@ -153,7 +153,7 @@ void loop() {
 
 
   //subir
-  if(U_B==true){
+  if(UG==true&&!Run){
     ///arriba
     digitalWrite(flag,HIGH);
     digitalWrite(GINA,LOW);
