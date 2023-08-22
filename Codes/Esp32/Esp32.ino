@@ -1,4 +1,4 @@
-#include <PS4Controller.h>
+#include "PS4Controller.h"
 #include <Wire.h>
 // Aaddres ESP32 CAPI    3c:71:bf:fb:c3:fa
 unsigned long lastTimeStamp = 0;
@@ -9,18 +9,18 @@ void notify()
   int DirLeft = PS4.LStickY();
   int Dir1 = PS4.R2();
   int Dir2 = PS4.L2();
-  int GD= PS4.R1();
-  int GI= PS4.L1();  
-  int DB= PS4.Down();
-  int UB= PS4.Up();
-  int CB= PS4.Circle();
-  String dataToSend =String(DirRigh) + "," +String(DirLeft) + "," + String(Dir1) + "," + String(Dir2) + "," + String(GI) + "," + String(GD) + ","+ String(DB) + ","+ String(UB) + ","+ String(CB) + ",";
+  int GD = PS4.R1();
+  int GI = PS4.L1();
+  int DB = PS4.Down();
+  int UB = PS4.Up();
+  int CB = PS4.Circle();
+  String dataToSend = String(DirRigh) + "," + String(DirLeft) + "," + String(Dir1) + "," + String(Dir2) + "," + String(GI) + "," + String(GD) + "," + String(DB) + "," + String(UB) + "," + String(CB) + ",";
   Wire.beginTransmission(1);
- // Convierte la cadena a una matriz de bytes
+  // Convierte la cadena a una matriz de bytes
   if (millis() - lastTimeStamp > 30)
   {
-    //Serial.println(messageString);
-    
+    // Serial.println(messageString);
+
     Wire.write(dataToSend.c_str());
     Wire.endTransmission();
     lastTimeStamp = millis();
@@ -43,7 +43,7 @@ void notify()
   PS4.L1(),
   PS4.R1(),
   PS4.L2(),
-  PS4.R2(),  
+  PS4.R2(),
   PS4.L3(),
   PS4.R3();
   //Only needed to print the message properly on serial monitor. Else we dont need it.
@@ -61,11 +61,11 @@ void onConnect()
 
 void onDisConnect()
 {
-  Serial.println("Disconnected!.");    
+  Serial.println("Disconnected!.");
 }
 
-
-void setup() {
+void setup()
+{
   Wire.begin();
   Serial.begin(115200);
   PS4.attach(notify);
@@ -73,10 +73,9 @@ void setup() {
   PS4.attachOnDisconnect(onDisConnect);
   PS4.begin();
   Serial.println("Ready.");
-
 }
 
-void loop() {
+void loop()
+{
   // put your main code here, to run repeatedly:
-
 }
