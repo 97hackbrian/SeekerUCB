@@ -1,6 +1,7 @@
 #include "Wire.h"
 #include "MotorSeeker.h"
 #include "Servo.h"
+#include <SoftPWM.h>
 Servo servo1;
 Servo servo2;
 
@@ -12,12 +13,17 @@ Servo servo2;
 #define ENB 4
 
 #define ho 3
-#define flag 12
+#define flag 14
+
+
+#define GPWM 12
+#define GINB 15
+#define GINA 16
 
 int Val = 0;
 int S_Motor = 0;
 
-int valores[9];
+int valores[11];
 
 MotorSeeker motor(RPWMA, LPWMA, ENA, RPWMB, LPWMB, ENB);
 
@@ -31,6 +37,12 @@ void setup() {
   servo2.attach(A3);
   pinMode(ho,OUTPUT);
   pinMode(flag,OUTPUT);
+
+  //pinMode(GPWM,OUTPUT);
+  SoftPWMBegin();
+  
+  pinMode(GINB,OUTPUT);
+  pinMode(GINA,OUTPUT);
   
   digitalWrite(ho,LOW);
 
@@ -42,26 +54,55 @@ void setup() {
 }
 
 void loop() {
-  int LsX = valores[0];
-  int LsY = valores[1];
-  int Dir2  = valores[2];
-  int Dir1  = valores[3];
-  int G_I = valores[4];
-  int G_D = valores[5];
-  int D_B = valores[6];
-  int U_B = valores[7];
-  int C_B = valores[8];
-  if (Dir1 && !Dir2)  { Val = 1 ;}
-  else if (!Dir1 && Dir2) { Val = -1;}
+  int DG = valores[0];
+  int UG = valores[1];
+  int CJ1  = valores[2];
+  int CJ2  = valores[3];
+  int Up = valores[4];
+  int Left = valores[5];
+  int Right = valores[6];
+  int Back = valores[7];
+  int Run = valores[8];
+  int Hoo = valores[9];
+  int Elect = valores[10];
+
+
+  if (CJ1 && !CJ2)  { Val = 80 ;}
+
+  else if (!CJ1 && CJ2) { Val =150 ;}
+
   else { Val = 0;}
+
+  /*
   int DirRigh = map (LsX,  0 , 127 , 240 , 50  ) ;
   int DirLeft = map (LsX,  -127 , 0 , 50 , 240 ) ;
   DirLeft = constrain (DirLeft, 50 , 240 );
-  DirRigh = constrain (DirRigh ,50, 240 );
+  DirRigh = constrain (DirRigh ,50, 240 );*/
 
-  if (!G_D && !G_I ){
-    motor.move((Val * DirRigh)  , (Val * DirLeft));
+  if (Run && (Left||Right||Up) ){
+    if(Up&&!Left&&!Right){
+      motor.move((-Val)  , (Val));
+    }
+    else if (Left&&!Up&&!Right)
+    {
+      motor.move((-Val)  , (Val));
+    }
+    else if (Right&&!Left&&!Up)
+    {
+      motor.move((Val)  , (-Val));
+    }
+    else if (Up&&Right&&!Left)
+    {
+      motor.move((Val)  , int((Val*0.5)));
+    }
+    else if (Up&&Left&&!Right)
+    {
+      motor.move(int((Val*0.5))  , Val);
+    }
+    
   }
+
+/*
   else {
     int G_I = valores[4];
     int G_D = valores[5];
@@ -82,11 +123,14 @@ void loop() {
 */
 
 //bajar
-  if(D_B==true){
+  if(D_B==true&&!Run){
     digitalWrite(ho,LOW);
     //bajar
     //servo1.write(190);
     //servo2.write(0);
+
+
+    /*
     for(int x=0;x<=190;x++){
       digitalWrite(flag,HIGH);
       digitalWrite(ho,LOW);
@@ -94,7 +138,14 @@ void loop() {
       servo2.write(190-x);
       delay(5);
     }
-    delay(1000);
+    */
+    digitalWrite(GINA,HIGH);
+    digitalWrite(GINB,LOW);
+    SoftPWMSet(GPWM, 130);
+    delay(166);
+    digitalWrite(GINA,LOW);
+    digitalWrite(GINB,LOW);
+    delay(166);
   }
   else{
     digitalWrite(flag,LOW);
@@ -105,15 +156,19 @@ void loop() {
   if(U_B==true){
     ///arriba
     digitalWrite(flag,HIGH);
-    servo1.write(0);
-    servo2.write(190);
-    delay(3500);
+    digitalWrite(GINA,LOW);
+    digitalWrite(GINB,HIGH);
+    SoftPWMSet(GPWM, 170);
+    delay(166);
+    digitalWrite(GINA,LOW);
+    digitalWrite(GINB,LOW);
+    delay(166);
   }
   else{
     digitalWrite(flag,LOW);
   }
 
-  if(C_B==true){
+  if(Elect==true){
     digitalWrite(ho,HIGH);
     digitalWrite(flag,HIGH);
   }
