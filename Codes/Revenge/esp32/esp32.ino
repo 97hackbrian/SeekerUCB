@@ -5,16 +5,21 @@ unsigned long lastTimeStamp = 0;
 
 void notify()
 {
-  int DirRigh = PS4.LStickX();
-  int DirLeft = PS4.LStickY();
-  int Dir1 = PS4.R2();
-  int Dir2 = PS4.L2();
-  int GD= PS4.R1();
-  int GI= PS4.L1();  
-  int DB= PS4.Down();
-  int UB= PS4.Up();
-  int CB= PS4.Circle();
-  String dataToSend =String(DirRigh) + "," +String(DirLeft) + "," + String(Dir1) + "," + String(Dir2) + "," + String(GI) + "," + String(GD) + ","+ String(DB) + ","+ String(UB) + ","+ String(CB) + ",";
+  //int DirRigh = PS4.LStickX();
+  //int DirLeft = PS4.LStickY();
+  int DG = PS4.R2();
+  int UG = PS4.L2();
+  int CJ1= PS4.L1();
+  int CJ2= PS4.R1();  
+  //int DB= PS4.Down();
+  int Up= PS4.Up();
+  int Left= PS4.Left();
+  int Right= PS4.Right();
+  int Back= PS4.Circle();
+  int Run= PS4.Cross();
+  int Hoo= PS4.Triangle();
+  int Elect=PS4.Square();
+  String dataToSend =String(DG) + "," +String(UG) + "," + String(CJ1) + "," + String(CJ2) + "," + String(Up) + "," + String(Left) + ","+ String(Right) + ","+ String(Back) + ","+ String(Run) + ","+ String(Hoo) + ","+ String(Elect) + ",";
   Wire.beginTransmission(1);
  // Convierte la cadena a una matriz de bytes
   if (millis() - lastTimeStamp > 30)
