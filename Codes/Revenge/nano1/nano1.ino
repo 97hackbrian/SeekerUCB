@@ -8,8 +8,8 @@ float m_s=8.80;//variable mina_superficial
 float m_e=8.68;//variable mina_enterrada
 
 float ontime, offtime, duty, period, dutyans;
-float duty_limite = 7.6;
-const int num_lect = 35; // Número de muestras init 10-20
+float duty_limite = 7.8;
+const int num_lect = 15; // Número de muestras init 10-20    80
 float lecturas[num_lect];
 int n = 0;
 
