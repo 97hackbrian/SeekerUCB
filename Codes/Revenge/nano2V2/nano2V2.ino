@@ -25,7 +25,7 @@
 int Val = 0;
 //int S_Motor = 0;
 
-int valores[11];
+int valores[16];
 
 MotorSeeker motor(RPWMA, LPWMA, ENA, RPWMB, LPWMB, ENB);
 
@@ -229,7 +229,7 @@ void receiveData(int byteCount) {
       currentValue = "";
       currentIndex++;
 
-      if (currentIndex >= 11) { // Ajusta este límite según la cantidad de valores esperados
+      if (currentIndex >= 16) { // Ajusta este límite según la cantidad de valores esperados
         break;
       }
     } else {
@@ -238,12 +238,12 @@ void receiveData(int byteCount) {
   }
 
   // Guardar el último valor si hay uno
-  if (currentIndex < 11) {
+  if (currentIndex < 16) {
     valores[currentIndex] = currentValue.toInt();
   }
 
   // Imprimir los valores enteros separados por espacios
-  for (int i = 0; i < 11; i++) { // Ajusta este bucle según la cantidad de valores esperados
+  for (int i = 0; i < 16; i++) { // Ajusta este bucle según la cantidad de valores esperados
     Serial.print(valores[i]);
     if (i < 3) {
       Serial.print(" "); // Imprimir un espacio entre valores, excepto después del último valor
