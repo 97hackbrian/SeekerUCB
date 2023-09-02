@@ -19,8 +19,8 @@
 
 
 #define GPWM 12
-#define GINB 15
-#define GINA 16
+#define GINB 16
+#define GINA 15
 
 int Val = 0;
 //int S_Motor = 0;
@@ -30,12 +30,25 @@ int valores[16];
 MotorSeeker motor(RPWMA, LPWMA, ENA, RPWMB, LPWMB, ENB);
 
 void receiveData(int byteCount);
+
+
+void generatePWM(int pin, int value) {
+  const unsigned long period = 1000;  // Período de la señal PWM en microsegundos (1000 µs = 1 kHz)
+  const unsigned long onTime = (value * period) / 255;
+  const unsigned long offTime = period - onTime;
+
+  digitalWrite(pin, HIGH);
+  delayMicroseconds(onTime);
+  digitalWrite(pin, LOW);
+  delayMicroseconds(offTime);
+}
+
 void setup() {
   // put your setup code here, to run once:
   Wire.begin(1); // Inicia la comunicación I2C como esclavo con dirección 8
   Wire.onReceive(receiveData); // Configura la función para manejar datos recibidos
   
-  //servo1.attach(A2);
+  //servo1.attach(A3);
   //servo2.attach(A3);
   pinMode(ho,OUTPUT);
   pinMode(flag,OUTPUT);
@@ -74,10 +87,10 @@ void loop() {
   int DG2=valores[14];
   int UG2=valores[15];
 
+  
+  if (CJ1 && !CJ2)  { Val = 45 ;}
 
-  if (CJ1 && !CJ2)  { Val = 110 ;}
-
-  else if (!CJ1 && CJ2) { Val =160 ;}
+  else if (!CJ1 && CJ2) { Val =70 ;}
 
   else { Val = 0;}
 
@@ -160,7 +173,7 @@ void loop() {
       servo2.write(190-x);
       delay(5);
     }
-    */
+    
     digitalWrite(GINA,HIGH);
     digitalWrite(GINB,LOW);
     digitalWrite(GPWM,HIGH);
@@ -171,6 +184,11 @@ void loop() {
     digitalWrite(GINB,LOW);
     digitalWrite(GPWM,LOW);
     delay(566);
+  */
+  digitalWrite(GINA,HIGH);
+  digitalWrite(GINB,LOW);
+  generatePWM(GPWM, 107);
+  
   }
   else{
     digitalWrite(flag,LOW);
@@ -187,6 +205,8 @@ void loop() {
     digitalWrite(ho,LOW);
   }
     ///arriba
+  
+    /*
     digitalWrite(flag,HIGH);
     digitalWrite(GINA,LOW);
     digitalWrite(GINB,HIGH);
@@ -196,7 +216,14 @@ void loop() {
     digitalWrite(GINA,LOW);
     digitalWrite(GINB,LOW);
     digitalWrite(GPWM,LOW);
-    delay(500);
+    delay(500);*/
+
+  digitalWrite(GINA,LOW);
+  digitalWrite(GINB,HIGH);
+  generatePWM(GPWM, 130);
+
+    
+  
   }
   else{
     digitalWrite(flag,LOW);
@@ -209,6 +236,15 @@ void loop() {
   else{
     digitalWrite(ho,LOW);
   }
+
+  /*
+  if(Gri==true){
+    servo1.write(110);
+  }
+  else{
+    servo1.write(9);
+  }
+  */
 
 }
 

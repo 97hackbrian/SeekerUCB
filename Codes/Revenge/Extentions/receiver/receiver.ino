@@ -1,19 +1,19 @@
 #include <esp_now.h>
 #include <WiFi.h>
 #include <Wire.h>
-
-
+#include "ESP32Servo.h"
+Servo servo1;
 #define SIGNAL_TIMEOUT 1000 
 
 unsigned long lastRecvTime = 0;
 
 //Right motor
-#define MOTORLEFT_PWM     32
-#define MOTORLEFT_DIR_A   23    
-#define MOTORLEFT_DIR_B   22
+#define MOTORLEFT_PWM     16
+#define MOTORLEFT_DIR_A   4    
+#define MOTORLEFT_DIR_B   0
 
 //Left motor
-#define MOTORRIGH_PWM    13
+#define MOTORRIGH_PWM    17
 #define MOTORRIGH_DIR_A  12        
 #define MOTORRIGH_DIR_B  14
 
@@ -139,6 +139,33 @@ void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len)
   
      Wire.write(dataToSend.c_str());
     Wire.endTransmission();
+//bajar
+   if(share==true){
+    //generatePWM(MOTORLEFT_PWM, 250);
+    //generatePWM(MOTORRIGH_PWM, 250);
+    ledcWrite(leftMotorPWMSpeedChannel, 200);
+    ledcWrite(rightMotorPWMSpeedChannel, 200);
+    digitalWrite(MOTORLEFT_DIR_A,HIGH);
+    digitalWrite(MOTORLEFT_DIR_B,LOW);
+   }
+   else if(options==true){
+    ledcWrite(leftMotorPWMSpeedChannel, 255);
+    ledcWrite(rightMotorPWMSpeedChannel, 255);
+    digitalWrite(MOTORLEFT_DIR_A,LOW);
+    digitalWrite(MOTORLEFT_DIR_B,HIGH);
+   }
+   
+   else{
+    digitalWrite(MOTORLEFT_DIR_A,LOW);
+    digitalWrite(MOTORLEFT_DIR_B,LOW);
+   }
+
+   if(PTriangle==true){
+    servo1.write(110);
+  }
+  else{
+    servo1.write(9);
+  }
    
 
   lastRecvTime = millis(); 
@@ -164,8 +191,22 @@ void setUpPinModes()
   ledcAttachPin(MOTORLEFT_PWM ,  leftMotorPWMSpeedChannel);  
   motor(0,0);
 }
+
+
+void generatePWM(int pin, int value) {
+  const unsigned long period = 1000;  // Período de la señal PWM en microsegundos (1000 µs = 1 kHz)
+  const unsigned long onTime = (value * period) / 255;
+  const unsigned long offTime = period - onTime;
+
+  digitalWrite(pin, HIGH);
+  delayMicroseconds(onTime);
+  digitalWrite(pin, LOW);
+  delayMicroseconds(offTime);
+}
+
 void setup() 
 {
+  servo1.attach(27);
   setUpPinModes();
   Serial.begin(115200);
   WiFi.mode(WIFI_STA);
