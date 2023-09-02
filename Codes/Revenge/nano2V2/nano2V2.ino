@@ -5,14 +5,14 @@
 //Servo servo1;
 //Servo servo2;
 
-#define RPWMB 10
-#define LPWMB 11
-#define ENB 9
+#define RPWMA 11
+#define LPWMA 10
+#define ENA 9
 
 
-#define RPWMA 6
-#define LPWMA 5
-#define ENA 4
+#define RPWMB 6
+#define LPWMB 5
+#define ENB 4
 
 #define ho 3
 #define flag 14
@@ -63,11 +63,16 @@ void loop() {
   int CJ2  = valores[3];
   int Up = valores[4];
   int Left = valores[5];
-  int Right = valores[6];
-  int Back = valores[7];
-  int Run = valores[8];
-  int Hoo = valores[9];
-  int Elect = valores[10];
+  int Back = valores[6];
+  int Right = valores[7];
+  int Elect = valores[8];
+  int Run =   valores[9];
+  int Circle=valores[10];
+  int Gri = valores[11];
+  int  Hoo= valores[12];
+  int  NoM= valores[13];
+  int DG2=valores[14];
+  int UG2=valores[15];
 
 
   if (CJ1 && !CJ2)  { Val = 110 ;}
