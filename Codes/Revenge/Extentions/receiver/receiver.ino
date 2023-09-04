@@ -161,10 +161,10 @@ void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len)
    }
 
    if(PTriangle==true){
-    servo1.write(110);
+    servo1.write(140);
   }
   else{
-    servo1.write(9);
+    servo1.write(7);
   }
    
 

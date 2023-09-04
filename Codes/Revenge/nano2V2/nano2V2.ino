@@ -220,7 +220,7 @@ void loop() {
 
   digitalWrite(GINA,LOW);
   digitalWrite(GINB,HIGH);
-  generatePWM(GPWM, 130);
+  generatePWM(GPWM, 140);
 
     
   

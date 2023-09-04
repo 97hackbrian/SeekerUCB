@@ -3,14 +3,17 @@
 #define buzzer 3
 #define ledPin 13
 #define flag_buzzer 10
-#define alpha 0.04
-#define nom 4
+#define alpha_altas 0.10 //a0.09
+#define alpha_bajas 0.12 //b0.10
 
+#define nom 4
+#define fan 2
 int valores[16];
 void receiveData(int byteCount);
 
 float ontime, offtime, duty, period, dutyans, prom=0;
-float duty_limite = 8.5;
+float duty_limite_alto;
+float duty_limite_bajo;
 const int num_lect = 500; // Número de muestras
 float lecturas[num_lect];
 int n = 0;
@@ -21,6 +24,9 @@ void Buzzer(void);
 
 void setup()
 {
+  pinMode(fan,OUTPUT);
+  digitalWrite(fan,HIGH);
+
   pinMode(nom,OUTPUT);
   Wire.begin(1); // Inicia la comunicación I2C como esclavo con dirección 8
   Wire.onReceive(receiveData); // Configura la función para manejar datos recibidos
@@ -37,15 +43,15 @@ void setup()
       readSensor();
       promSensor();
   }
-  duty_limite=prom*1.055;
-  Serial.println(duty_limite);
-  delay(2000);
+  duty_limite_alto=prom*1.04; //a1.04
+  duty_limite_bajo=prom*0.93; //a0.92
+  Serial.println(duty_limite_alto);
+  delay(1000);
   //Fin calibracion del sensor
 }
 
 void loop()
 {
-
   int  Hoo= valores[12];
   int  NoM= valores[13];
 
@@ -57,7 +63,7 @@ void loop()
     digitalWrite(nom,LOW);
     
   }
-  
+
   readSensor();
   promSensor();
   Buzzer(Hoo);
@@ -81,21 +87,31 @@ void readSensor()
 
 void promSensor()
 {
-  prom = (alpha*duty) + ((1-alpha)*prom);
+  if(duty<duty_limite_bajo){
+    prom = (alpha_bajas*duty) + ((1-alpha_bajas)*prom);
+  }
+  else{
+    prom = (alpha_altas*duty) + ((1-alpha_altas)*prom);   
+  }
 }
 
 void Buzzer(int Hoo){
   Serial.print(prom);
   Serial.print(" ");
-  Serial.print(duty_limite);
+  Serial.print(duty_limite_alto);
+  Serial.print(" ");
+  Serial.print(duty_limite_bajo);
   Serial.print(" ");
   Serial.println(duty);
-  if (prom > duty_limite||Hoo==true) {
+  if (prom > duty_limite_alto||Hoo==true
+  ) {
     digitalWrite(buzzer, HIGH);
   } else {
     digitalWrite(buzzer, LOW);
   }
 }
+
+
 
 
 void receiveData(int byteCount) {
@@ -140,6 +156,4 @@ void receiveData(int byteCount) {
     }
   }
   Serial.println(); // Imprimir un salto de línea al final
-  
-
 }
