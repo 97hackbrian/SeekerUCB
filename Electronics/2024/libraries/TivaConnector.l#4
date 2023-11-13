@@ -307,12 +307,28 @@
 <connects>
 <connect gate="G$1" pin="+3.3V" pad="P60 P80" route="any"/>
 <connect gate="G$1" pin="+5V" pad="P41 P61" route="any"/>
+<connect gate="G$1" pin="A0/PE3" pad="P66"/>
+<connect gate="G$1" pin="A1/PE2" pad="P65"/>
+<connect gate="G$1" pin="A18/PK2" pad="P47"/>
+<connect gate="G$1" pin="A19/PK3" pad="P48"/>
+<connect gate="G$1" pin="A2/PE1" pad="P64"/>
+<connect gate="G$1" pin="A3/PE0" pad="P63"/>
+<connect gate="G$1" pin="A4/PD7" pad="P67"/>
+<connect gate="G$1" pin="A6/PD5" pad="P55"/>
+<connect gate="G$1" pin="A7/PD4" pad="P56"/>
+<connect gate="G$1" pin="CLK2/A12/PD3" pad="P74"/>
+<connect gate="G$1" pin="CLK5/PQ0" pad="P54"/>
+<connect gate="G$1" pin="CS/A13/PD2" pad="P59"/>
+<connect gate="G$1" pin="CS1/A10/PB4" pad="P43"/>
 <connect gate="G$1" pin="CS5/PQ1" pad="P29"/>
 <connect gate="G$1" pin="GND" pad="P1 P21 P42 P62" route="any"/>
+<connect gate="G$1" pin="MISO1/A8/PE5" pad="P75"/>
 <connect gate="G$1" pin="MISO2/A15/PD0" pad="P7"/>
 <connect gate="G$1" pin="MISO6/PQ3" pad="P27"/>
+<connect gate="G$1" pin="MOSI1/A9/PE4" pad="P79"/>
 <connect gate="G$1" pin="MOSI2/A14/PD1" pad="P6"/>
 <connect gate="G$1" pin="MOSI6/PQ2" pad="P26"/>
+<connect gate="G$1" pin="PA6" pad="P68"/>
 <connect gate="G$1" pin="PF1" pad="P20"/>
 <connect gate="G$1" pin="PF2" pad="P19"/>
 <connect gate="G$1" pin="PF3" pad="P18"/>
@@ -332,20 +348,38 @@
 <connect gate="G$1" pin="PM1" pad="P36"/>
 <connect gate="G$1" pin="PM2" pad="P35"/>
 <connect gate="G$1" pin="PM3" pad="P2"/>
+<connect gate="G$1" pin="PM4" pad="P69"/>
+<connect gate="G$1" pin="PM5" pad="P70"/>
 <connect gate="G$1" pin="PM6" pad="P30"/>
 <connect gate="G$1" pin="PM7" pad="P22"/>
 <connect gate="G$1" pin="PN2" pad="P8"/>
 <connect gate="G$1" pin="PN3" pad="P9"/>
 <connect gate="G$1" pin="PP2" pad="P10"/>
 <connect gate="G$1" pin="PP3" pad="P28"/>
+<connect gate="G$1" pin="PP4" pad="P53"/>
 <connect gate="G$1" pin="PP5" pad="P23"/>
 <connect gate="G$1" pin="RESET@1" pad="P5"/>
 <connect gate="G$1" pin="RESET@2" pad="P25"/>
+<connect gate="G$1" pin="RX3/PA4" pad="P49"/>
+<connect gate="G$1" pin="RX4/A16/PK0" pad="P45"/>
+<connect gate="G$1" pin="RX5/PC6" pad="P76"/>
+<connect gate="G$1" pin="RX6/PP0" pad="P58"/>
+<connect gate="G$1" pin="RX7/PC4" pad="P78"/>
+<connect gate="G$1" pin="SCK1/A11/PB5" pad="P44"/>
+<connect gate="G$1" pin="SCL0/PB2" pad="P72"/>
 <connect gate="G$1" pin="SCL1/PG0" pad="P17"/>
+<connect gate="G$1" pin="SCL1/PN5" pad="P52"/>
 <connect gate="G$1" pin="SCL2/PL1" pad="P13"/>
+<connect gate="G$1" pin="SDA0/PB3" pad="P71"/>
 <connect gate="G$1" pin="SDA1/PG1" pad="P40"/>
+<connect gate="G$1" pin="SDA1/PN4" pad="P51"/>
 <connect gate="G$1" pin="SDA2/PL0" pad="P14"/>
 <connect gate="G$1" pin="TX2/PA7" pad="P24"/>
+<connect gate="G$1" pin="TX3/PA5" pad="P50"/>
+<connect gate="G$1" pin="TX4/A17/PK1" pad="P46"/>
+<connect gate="G$1" pin="TX5/PC7" pad="P73"/>
+<connect gate="G$1" pin="TX6/PP1" pad="P57"/>
+<connect gate="G$1" pin="TX7/PC5" pad="P77"/>
 </connects>
 <technologies>
 <technology name=""/>

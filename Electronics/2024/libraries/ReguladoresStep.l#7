@@ -73,18 +73,18 @@
 </layers>
 <library>
 <packages>
-<package name="REGULADORSTEP-DOWN3A">
+<package name="REGULADORSTEP-DOWN3/5A">
 <pad name="P$1" x="0" y="0" drill="0.8001" diameter="2.286" shape="square"/>
-<pad name="P$2" x="0" y="-16.98" drill="0.8001" diameter="2.286" shape="square"/>
-<pad name="P$3" x="39.99" y="0" drill="0.8001" diameter="2.286" shape="square"/>
-<pad name="P$4" x="39.99" y="-16.98" drill="0.8001" diameter="2.286" shape="square"/>
-<dimension x1="0" y1="0" x2="0" y2="-16.98" x3="-6.35" y3="-8.49" textsize="1.27" layer="21" precision="1" visible="yes"/>
-<dimension x1="0" y1="-16.98" x2="39.99" y2="-16.98" x3="19.995" y3="-30.48" textsize="1.27" layer="21" precision="1" visible="yes"/>
-<wire x1="-2.54" y1="2.54" x2="42.53" y2="2.54" width="0.127" layer="21"/>
-<wire x1="42.53" y1="2.54" x2="42.53" y2="-19.52" width="0.127" layer="21"/>
-<wire x1="42.53" y1="-19.52" x2="-2.54" y2="-19.52" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-19.52" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
-<text x="17.51" y="-10.43" size="1.27" layer="21">LM2596</text>
+<pad name="P$2" x="0" y="-22.86" drill="0.8001" diameter="2.286" shape="square"/>
+<pad name="P$3" x="46.99" y="0" drill="0.8001" diameter="2.286" shape="square"/>
+<pad name="P$4" x="46.99" y="-22.86" drill="0.8001" diameter="2.286" shape="square"/>
+<dimension x1="0" y1="0" x2="0" y2="-22.86" x3="-6.35" y3="-11.43" textsize="1.27" layer="21" precision="1" visible="yes"/>
+<dimension x1="0" y1="-22.86" x2="46.99" y2="-22.86" x3="23.495" y3="-30.48" textsize="1.27" layer="21" precision="1" visible="yes"/>
+<wire x1="-2.54" y1="2.54" x2="49.53" y2="2.54" width="0.127" layer="21"/>
+<wire x1="49.53" y1="2.54" x2="49.53" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="49.53" y1="-25.4" x2="-2.54" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-25.4" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<text x="16.51" y="-11.43" size="1.27" layer="21">XL4005/LM2596</text>
 </package>
 <package name="REGULADORWITHDISPLAY">
 <pad name="P$1" x="0" y="0" drill="0.8001" diameter="2.286" shape="square"/>
@@ -110,19 +110,6 @@
 <wire x1="-1.24" y1="-10.77" x2="-1.27" y2="4.27" width="0.127" layer="21"/>
 <dimension x1="0" y1="0" x2="0.03" y2="-6.5" x3="-3.794959375" y3="-3.267584375" textsize="1.27" layer="21"/>
 <dimension x1="0" y1="0" x2="33.97" y2="0" x3="16.985" y3="3.81" textsize="1.27" layer="21"/>
-</package>
-<package name="REGULADORSTEP-DOWN5ACURRENT">
-<pad name="P$1" x="0" y="-3.81" drill="0.8001" diameter="2.286" shape="square"/>
-<pad name="P$2" x="0" y="-16.98" drill="0.8001" diameter="2.286" shape="square"/>
-<pad name="P$3" x="57.77" y="-3.81" drill="0.8001" diameter="2.286" shape="square"/>
-<pad name="P$4" x="57.77" y="-16.98" drill="0.8001" diameter="2.286" shape="square"/>
-<dimension x1="0" y1="-3.81" x2="0" y2="-16.98" x3="-6.35" y3="-10.395" textsize="1.27" layer="21" precision="1" visible="yes"/>
-<dimension x1="0" y1="-16.98" x2="57.77" y2="-16.98" x3="28.885" y3="-30.48" textsize="1.27" layer="21" precision="1" visible="yes"/>
-<wire x1="-2.54" y1="6.35" x2="60.31" y2="6.35" width="0.127" layer="21"/>
-<wire x1="60.31" y1="6.35" x2="60.31" y2="-27.14" width="0.127" layer="21"/>
-<wire x1="60.31" y1="-27.14" x2="-2.54" y2="-27.14" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-27.14" x2="-2.54" y2="6.35" width="0.127" layer="21"/>
-<text x="17.51" y="-14.24" size="1.27" layer="21">XL4015</text>
 </package>
 </packages>
 <symbols>
@@ -163,7 +150,7 @@
 <gate name="G$1" symbol="STEPCONNECTORS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="REGULADORSTEP-DOWN3A">
+<device name="" package="REGULADORSTEP-DOWN3/5A">
 <connects>
 <connect gate="G$1" pin="VIN+" pad="P$1"/>
 <connect gate="G$1" pin="VIN-" pad="P$2"/>

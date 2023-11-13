@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -73,17 +73,18 @@
 </layers>
 <library>
 <packages>
-<package name="REGULADORSTEP-DOWN3/5A">
+<package name="REGULADORSTEP-DOWN3A">
 <pad name="P$1" x="0" y="0" drill="0.8001" diameter="2.286" shape="square"/>
-<pad name="P$2" x="0" y="-22.86" drill="0.8001" diameter="2.286" shape="square"/>
-<pad name="P$3" x="53.34" y="0" drill="0.8001" diameter="2.286" shape="square"/>
-<pad name="P$4" x="53.34" y="-22.86" drill="0.8001" diameter="2.286" shape="square"/>
-<dimension x1="0" y1="0" x2="0" y2="-22.86" x3="-6.35" y3="-11.43" textsize="1.27" layer="21" precision="1" visible="yes"/>
-<dimension x1="0" y1="-22.86" x2="53.34" y2="-22.86" x3="26.67" y3="-30.48" textsize="1.27" layer="21" precision="1" visible="yes"/>
-<wire x1="-2.54" y1="2.54" x2="55.88" y2="2.54" width="0.127" layer="21"/>
-<wire x1="55.88" y1="2.54" x2="55.88" y2="-25.4" width="0.127" layer="21"/>
-<wire x1="55.88" y1="-25.4" x2="-2.54" y2="-25.4" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-25.4" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<pad name="P$2" x="0" y="-16.98" drill="0.8001" diameter="2.286" shape="square"/>
+<pad name="P$3" x="39.99" y="0" drill="0.8001" diameter="2.286" shape="square"/>
+<pad name="P$4" x="39.99" y="-16.98" drill="0.8001" diameter="2.286" shape="square"/>
+<dimension x1="0" y1="0" x2="0" y2="-16.98" x3="-6.35" y3="-8.49" textsize="1.27" layer="21" precision="1" visible="yes"/>
+<dimension x1="0" y1="-16.98" x2="39.99" y2="-16.98" x3="19.995" y3="-30.48" textsize="1.27" layer="21" precision="1" visible="yes"/>
+<wire x1="-2.54" y1="2.54" x2="42.53" y2="2.54" width="0.127" layer="21"/>
+<wire x1="42.53" y1="2.54" x2="42.53" y2="-19.52" width="0.127" layer="21"/>
+<wire x1="42.53" y1="-19.52" x2="-2.54" y2="-19.52" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-19.52" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<text x="14.51" y="-8.43" size="1.27" layer="21">XL4005/LM2596</text>
 </package>
 <package name="REGULADORWITHDISPLAY">
 <pad name="P$1" x="0" y="0" drill="0.8001" diameter="2.286" shape="square"/>
@@ -98,9 +99,21 @@
 <dimension x1="0" y1="0" x2="59.944" y2="0" x3="29.972" y3="5.08" textsize="1.27" layer="21"/>
 <rectangle x1="20.32" y1="-15.24" x2="38.1" y2="-6.35" layer="21"/>
 </package>
+<package name="MT3608">
+<pad name="P$1" x="0" y="0" drill="0.6" diameter="2.286" shape="square"/>
+<pad name="P$2" x="0.03" y="-6.5" drill="0.6" diameter="2.286" shape="square"/>
+<pad name="P$3" x="33.97" y="0" drill="0.6" diameter="2.286" shape="square"/>
+<pad name="P$4" x="34" y="-6.5" drill="0.6" diameter="2.286" shape="square"/>
+<wire x1="-1.27" y1="4.27" x2="35.24" y2="4.27" width="0.127" layer="21"/>
+<wire x1="35.24" y1="4.27" x2="35.27" y2="-10.77" width="0.127" layer="21"/>
+<wire x1="35.27" y1="-10.77" x2="-1.24" y2="-10.77" width="0.127" layer="21"/>
+<wire x1="-1.24" y1="-10.77" x2="-1.27" y2="4.27" width="0.127" layer="21"/>
+<dimension x1="0" y1="0" x2="0.03" y2="-6.5" x3="-3.794959375" y3="-3.267584375" textsize="1.27" layer="21"/>
+<dimension x1="0" y1="0" x2="33.97" y2="0" x3="16.985" y3="3.81" textsize="1.27" layer="21"/>
+</package>
 </packages>
 <symbols>
-<symbol name="STEPDOWNCONNECTOR">
+<symbol name="STEPCONNECTORS">
 <pin name="VIN+" x="-15.24" y="5.08" length="middle"/>
 <pin name="VIN-" x="-15.24" y="-7.62" length="middle" swaplevel="1"/>
 <pin name="VOUT-" x="15.24" y="-7.62" length="middle" swaplevel="1" rot="R180"/>
@@ -114,6 +127,42 @@
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="STEPDOWN3ADISPLAY">
+<gates>
+<gate name="G$1" symbol="STEPCONNECTORS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REGULADORWITHDISPLAY">
+<connects>
+<connect gate="G$1" pin="VIN+" pad="P$1"/>
+<connect gate="G$1" pin="VIN-" pad="P$2"/>
+<connect gate="G$1" pin="VOUT+" pad="P$3"/>
+<connect gate="G$1" pin="VOUT-" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STEPDOWN3A">
+<gates>
+<gate name="G$1" symbol="STEPCONNECTORS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REGULADORSTEP-DOWN3A">
+<connects>
+<connect gate="G$1" pin="VIN+" pad="P$1"/>
+<connect gate="G$1" pin="VIN-" pad="P$2"/>
+<connect gate="G$1" pin="VOUT+" pad="P$3"/>
+<connect gate="G$1" pin="VOUT-" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
