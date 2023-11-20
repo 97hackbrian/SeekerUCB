@@ -1,0 +1,4 @@
+colcon-common-extensions
+rosdep
+rosdistro
+setuptools

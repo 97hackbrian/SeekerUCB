@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PubSub
+Version: 0.0.0
+Summary: Un simple paquete ROS 2 con un nodo publicador y un nodo suscriptor
+Home-page: UNKNOWN
+Author: tu_nombre
+Author-email: tu_email@example.com
+Maintainer: tu_nombre
+Maintainer-email: tu_email@example.com
+License: Apache License, Version 2.0
+Keywords: ROS
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+
+UNKNOWN
+

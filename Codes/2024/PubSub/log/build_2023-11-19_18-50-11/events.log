@@ -1,0 +1,122 @@
+[0.000000] (-) TimerEvent: {}
+[0.001185] (PubSub) JobQueued: {'identifier': 'PubSub', 'dependencies': OrderedDict()}
+[0.002256] (PubSub) JobStarted: {'identifier': 'PubSub'}
+[0.099636] (-) TimerEvent: {}
+[0.200758] (-) TimerEvent: {}
+[0.301688] (-) TimerEvent: {}
+[0.403181] (-) TimerEvent: {}
+[0.506838] (-) TimerEvent: {}
+[0.608418] (-) TimerEvent: {}
+[0.709376] (-) TimerEvent: {}
+[0.810214] (-) TimerEvent: {}
+[0.911082] (-) TimerEvent: {}
+[1.011997] (-) TimerEvent: {}
+[1.112873] (-) TimerEvent: {}
+[1.213706] (-) TimerEvent: {}
+[1.314440] (-) TimerEvent: {}
+[1.415197] (-) TimerEvent: {}
+[1.516059] (-) TimerEvent: {}
+[1.616903] (-) TimerEvent: {}
+[1.717716] (-) TimerEvent: {}
+[1.818658] (-) TimerEvent: {}
+[1.920103] (-) TimerEvent: {}
+[2.021148] (-) TimerEvent: {}
+[2.122139] (-) TimerEvent: {}
+[2.223487] (-) TimerEvent: {}
+[2.330991] (-) TimerEvent: {}
+[2.433404] (-) TimerEvent: {}
+[2.534404] (-) TimerEvent: {}
+[2.635303] (-) TimerEvent: {}
+[2.736201] (-) TimerEvent: {}
+[2.837066] (-) TimerEvent: {}
+[2.937853] (-) TimerEvent: {}
+[3.038624] (-) TimerEvent: {}
+[3.139375] (-) TimerEvent: {}
+[3.240169] (-) TimerEvent: {}
+[3.341098] (-) TimerEvent: {}
+[3.441994] (-) TimerEvent: {}
+[3.542730] (-) TimerEvent: {}
+[3.643477] (-) TimerEvent: {}
+[3.744648] (-) TimerEvent: {}
+[3.845446] (-) TimerEvent: {}
+[3.946326] (-) TimerEvent: {}
+[4.047299] (-) TimerEvent: {}
+[4.149277] (-) TimerEvent: {}
+[4.193691] (PubSub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ubuntu/Documents/PubSub/build/PubSub/build', '--no-deps'], 'cwd': '/home/ubuntu/Documents/PubSub/build/PubSub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.100.69 45530 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/Documents', 'TERM_PROGRAM_VERSION': '1.84.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-1cd8341e-63e0-46b8-b20a-34dd5f886dd0.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-77c2764834.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/Documents/PubSub/build/PubSub', 'SSH_CONNECTION': '192.168.100.69 45530 192.168.100.35 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/Documents/PubSub/build/PubSub/prefix_override:/home/ubuntu/Documents/PubSub/install/PubSub/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[4.249473] (-) TimerEvent: {}
+[4.350328] (-) TimerEvent: {}
+[4.451206] (-) TimerEvent: {}
+[4.552041] (-) TimerEvent: {}
+[4.653052] (-) TimerEvent: {}
+[4.754669] (-) TimerEvent: {}
+[4.855812] (-) TimerEvent: {}
+[4.956775] (-) TimerEvent: {}
+[5.057787] (-) TimerEvent: {}
+[5.159295] (-) TimerEvent: {}
+[5.260738] (-) TimerEvent: {}
+[5.361725] (-) TimerEvent: {}
+[5.462887] (-) TimerEvent: {}
+[5.564300] (-) TimerEvent: {}
+[5.666209] (-) TimerEvent: {}
+[5.767920] (-) TimerEvent: {}
+[5.871969] (-) TimerEvent: {}
+[5.973829] (-) TimerEvent: {}
+[6.075373] (-) TimerEvent: {}
+[6.176351] (-) TimerEvent: {}
+[6.277467] (-) TimerEvent: {}
+[6.378790] (-) TimerEvent: {}
+[6.429739] (PubSub) StdoutLine: {'line': b'running develop\n'}
+[6.431781] (PubSub) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[6.432811] (PubSub) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.439096] (PubSub) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[6.439993] (PubSub) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.479119] (-) TimerEvent: {}
+[6.580282] (-) TimerEvent: {}
+[6.681370] (-) TimerEvent: {}
+[6.782424] (-) TimerEvent: {}
+[6.883466] (-) TimerEvent: {}
+[6.984509] (-) TimerEvent: {}
+[7.085863] (-) TimerEvent: {}
+[7.187983] (-) TimerEvent: {}
+[7.289389] (-) TimerEvent: {}
+[7.391758] (-) TimerEvent: {}
+[7.492796] (-) TimerEvent: {}
+[7.594277] (-) TimerEvent: {}
+[7.695749] (-) TimerEvent: {}
+[7.796828] (-) TimerEvent: {}
+[7.899724] (-) TimerEvent: {}
+[8.000650] (-) TimerEvent: {}
+[8.101636] (-) TimerEvent: {}
+[8.202734] (-) TimerEvent: {}
+[8.299871] (PubSub) StdoutLine: {'line': b'running egg_info\n'}
+[8.302236] (PubSub) StdoutLine: {'line': b'creating PubSub.egg-info\n'}
+[8.303315] (-) TimerEvent: {}
+[8.324391] (PubSub) StdoutLine: {'line': b'writing PubSub.egg-info/PKG-INFO\n'}
+[8.331721] (PubSub) StderrLine: {'line': b"package init file 'PubSub/__init__.py' not found (or not a regular file)\n"}
+[8.333021] (PubSub) StdoutLine: {'line': b'writing dependency_links to PubSub.egg-info/dependency_links.txt\n'}
+[8.340469] (PubSub) StdoutLine: {'line': b'writing entry points to PubSub.egg-info/entry_points.txt\n'}
+[8.345754] (PubSub) StdoutLine: {'line': b'writing requirements to PubSub.egg-info/requires.txt\n'}
+[8.350039] (PubSub) StdoutLine: {'line': b'writing top-level names to PubSub.egg-info/top_level.txt\n'}
+[8.352679] (PubSub) StdoutLine: {'line': b"writing manifest file 'PubSub.egg-info/SOURCES.txt'\n"}
+[8.355525] (PubSub) StdoutLine: {'line': b"reading manifest file 'PubSub.egg-info/SOURCES.txt'\n"}
+[8.366078] (PubSub) StdoutLine: {'line': b"writing manifest file 'PubSub.egg-info/SOURCES.txt'\n"}
+[8.376120] (PubSub) StdoutLine: {'line': b'running build_ext\n'}
+[8.379252] (PubSub) StdoutLine: {'line': b'Creating /home/ubuntu/Documents/PubSub/install/PubSub/lib/python3.10/site-packages/PubSub.egg-link (link to .)\n'}
+[8.382226] (PubSub) StdoutLine: {'line': b'Installing publisher_node script to /home/ubuntu/Documents/PubSub/install/PubSub/lib/PubSub\n'}
+[8.395894] (PubSub) StdoutLine: {'line': b'Installing subscriber_node script to /home/ubuntu/Documents/PubSub/install/PubSub/lib/PubSub\n'}
+[8.397671] (PubSub) StdoutLine: {'line': b'\n'}
+[8.399525] (PubSub) StdoutLine: {'line': b'Installed /home/ubuntu/Documents/PubSub/build/PubSub\n'}
+[8.404350] (-) TimerEvent: {}
+[8.509833] (-) TimerEvent: {}
+[8.592792] (PubSub) CommandEnded: {'returncode': 0}
+[8.610096] (-) TimerEvent: {}
+[8.715152] (-) TimerEvent: {}
+[8.816370] (-) TimerEvent: {}
+[8.919961] (-) TimerEvent: {}
+[9.022354] (-) TimerEvent: {}
+[9.123458] (-) TimerEvent: {}
+[9.225533] (-) TimerEvent: {}
+[9.326843] (-) TimerEvent: {}
+[9.428499] (-) TimerEvent: {}
+[9.480179] (PubSub) JobEnded: {'identifier': 'PubSub', 'rc': 0}
+[9.495786] (-) EventReactorShutdown: {}

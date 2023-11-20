@@ -1,0 +1,24 @@
+[4.204s] Invoking command in '/home/ubuntu/Documents/PubSub/build/PubSub': PYTHONPATH=/home/ubuntu/Documents/PubSub/build/PubSub/prefix_override:/home/ubuntu/Documents/PubSub/install/PubSub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ubuntu/Documents/PubSub/build/PubSub/build --no-deps
+[6.428s] running develop
+[6.430s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[6.431s]   warnings.warn(
+[6.437s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.438s]   warnings.warn(
+[8.298s] running egg_info
+[8.300s] creating PubSub.egg-info
+[8.328s] writing PubSub.egg-info/PKG-INFO
+[8.330s] package init file 'PubSub/__init__.py' not found (or not a regular file)
+[8.337s] writing dependency_links to PubSub.egg-info/dependency_links.txt
+[8.340s] writing entry points to PubSub.egg-info/entry_points.txt
+[8.344s] writing requirements to PubSub.egg-info/requires.txt
+[8.350s] writing top-level names to PubSub.egg-info/top_level.txt
+[8.352s] writing manifest file 'PubSub.egg-info/SOURCES.txt'
+[8.358s] reading manifest file 'PubSub.egg-info/SOURCES.txt'
+[8.373s] writing manifest file 'PubSub.egg-info/SOURCES.txt'
+[8.376s] running build_ext
+[8.378s] Creating /home/ubuntu/Documents/PubSub/install/PubSub/lib/python3.10/site-packages/PubSub.egg-link (link to .)
+[8.392s] Installing publisher_node script to /home/ubuntu/Documents/PubSub/install/PubSub/lib/PubSub
+[8.394s] Installing subscriber_node script to /home/ubuntu/Documents/PubSub/install/PubSub/lib/PubSub
+[8.396s] 
+[8.398s] Installed /home/ubuntu/Documents/PubSub/build/PubSub
+[8.593s] Invoked command in '/home/ubuntu/Documents/PubSub/build/PubSub' returned '0': PYTHONPATH=/home/ubuntu/Documents/PubSub/build/PubSub/prefix_override:/home/ubuntu/Documents/PubSub/install/PubSub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ubuntu/Documents/PubSub/build/PubSub/build --no-deps
