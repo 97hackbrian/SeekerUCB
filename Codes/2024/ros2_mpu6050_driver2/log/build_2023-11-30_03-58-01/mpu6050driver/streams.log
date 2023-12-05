@@ -1,0 +1,29 @@
+[0.427s] Invoking command in '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver -- -j4 -l4
+[0.684s] [ 33%] [32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o[0m
+[3.619s] [ 66%] [32m[1mLinking CXX executable mpu6050driver[0m
+[4.784s] [100%] Built target mpu6050driver
+[4.832s] Invoked command in '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver -- -j4 -l4
+[5.027s] Invoking command in '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver
+[5.059s] -- Install configuration: ""
+[5.059s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/lib/mpu6050driver/mpu6050driver
+[5.072s] -- Set runtime path of "/home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/lib/mpu6050driver/mpu6050driver" to ""
+[5.073s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver//launch
+[5.074s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver//launch/mpu6050driver_launch.py
+[5.074s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver//params
+[5.075s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver//params/mpu6050.yaml
+[5.077s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/ament_index/resource_index/package_run_dependencies/mpu6050driver
+[5.079s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/ament_index/resource_index/parent_prefix_path/mpu6050driver
+[5.081s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/environment/ament_prefix_path.sh
+[5.083s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/environment/ament_prefix_path.dsv
+[5.084s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/environment/path.sh
+[5.085s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/environment/path.dsv
+[5.087s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/local_setup.bash
+[5.088s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/local_setup.sh
+[5.090s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/local_setup.zsh
+[5.091s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/local_setup.dsv
+[5.092s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/package.dsv
+[5.094s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/ament_index/resource_index/packages/mpu6050driver
+[5.096s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/cmake/mpu6050driverConfig.cmake
+[5.097s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/cmake/mpu6050driverConfig-version.cmake
+[5.099s] -- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/package.xml
+[5.107s] Invoked command in '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver

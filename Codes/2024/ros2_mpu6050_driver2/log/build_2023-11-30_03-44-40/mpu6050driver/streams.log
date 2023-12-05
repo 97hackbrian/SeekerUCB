@@ -1,0 +1,48 @@
+[0.414s] Invoking command in '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_mpu6050_driver -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver
+[1.097s] -- The C compiler identification is GNU 11.4.0
+[1.620s] -- The CXX compiler identification is GNU 11.4.0
+[1.670s] -- Detecting C compiler ABI info
+[2.063s] -- Detecting C compiler ABI info - done
+[2.092s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.096s] -- Detecting C compile features
+[2.099s] -- Detecting C compile features - done
+[2.116s] -- Detecting CXX compiler ABI info
+[2.523s] -- Detecting CXX compiler ABI info - done
+[2.554s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.555s] -- Detecting CXX compile features
+[2.557s] -- Detecting CXX compile features - done
+[2.604s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.644s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[4.404s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[4.954s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.020s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.109s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.235s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.406s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.947s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.982s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.777s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.099s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.637s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.760s] -- Looking for pthread.h
+[8.136s] -- Looking for pthread.h - found
+[8.138s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.521s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.525s] -- Found Threads: TRUE  
+[9.419s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[10.398s] -- Configuring done
+[10.467s] -- Generating done
+[10.475s] -- Build files have been written to: /home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver
+[10.520s] Invoked command in '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_mpu6050_driver -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver
+[10.529s] Invoking command in '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver -- -j4 -l4
+[10.766s] [ 33%] [32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050driver.cpp.o[0m
+[10.768s] [ 66%] [32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o[0m
+[11.431s] [01m[K/home/ubuntu/ros2_mpu6050_driver/src/mpu6050sensor.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Ki2c/smbus.h: No such file or directory
+[11.432s]     6 | #include [01;31m[K<i2c/smbus.h>[m[K
+[11.432s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[11.433s] compilation terminated.
+[11.439s] gmake[2]: *** [CMakeFiles/mpu6050driver.dir/build.make:90: CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o] Error 1
+[11.439s] gmake[2]: *** Waiting for unfinished jobs....
+[31.730s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mpu6050driver.dir/all] Error 2
+[31.731s] gmake: *** [Makefile:146: all] Error 2
+[31.739s] Invoked command in '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver' returned '2': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver -- -j4 -l4

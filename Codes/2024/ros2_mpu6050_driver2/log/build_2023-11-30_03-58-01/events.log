@@ -1,0 +1,96 @@
+[0.000000] (-) TimerEvent: {}
+[0.002350] (mpu6050driver) JobQueued: {'identifier': 'mpu6050driver', 'dependencies': OrderedDict()}
+[0.002837] (mpu6050driver) JobStarted: {'identifier': 'mpu6050driver'}
+[0.098716] (-) TimerEvent: {}
+[0.199696] (-) TimerEvent: {}
+[0.300599] (-) TimerEvent: {}
+[0.401439] (-) TimerEvent: {}
+[0.411969] (mpu6050driver) JobProgress: {'identifier': 'mpu6050driver', 'progress': 'cmake'}
+[0.415304] (mpu6050driver) JobProgress: {'identifier': 'mpu6050driver', 'progress': 'build'}
+[0.418576] (mpu6050driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.100.217 39236 22'), ('LC_TIME', 'es_BO.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a0296009-5cfe-4289-8406-f5d7603186ce.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_BO.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/home/ubuntu/.local/bin:/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'es_BO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'es_BO.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-91fb76e771.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_BO.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_BO.UTF-8'), ('LC_IDENTIFICATION', 'es_BO.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.100.217 39236 192.168.100.35 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/ros2_ws/install/mpu6050_ros/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_BO.UTF-8'), ('LC_PAPER', 'es_BO.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble')]), 'shell': False}
+[0.501683] (-) TimerEvent: {}
+[0.602477] (-) TimerEvent: {}
+[0.686231] (mpu6050driver) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o\x1b[0m\n'}
+[0.702699] (-) TimerEvent: {}
+[0.803425] (-) TimerEvent: {}
+[0.904180] (-) TimerEvent: {}
+[1.005073] (-) TimerEvent: {}
+[1.106086] (-) TimerEvent: {}
+[1.206917] (-) TimerEvent: {}
+[1.307673] (-) TimerEvent: {}
+[1.408414] (-) TimerEvent: {}
+[1.509212] (-) TimerEvent: {}
+[1.610046] (-) TimerEvent: {}
+[1.710918] (-) TimerEvent: {}
+[1.811729] (-) TimerEvent: {}
+[1.912638] (-) TimerEvent: {}
+[2.013590] (-) TimerEvent: {}
+[2.114467] (-) TimerEvent: {}
+[2.215341] (-) TimerEvent: {}
+[2.316406] (-) TimerEvent: {}
+[2.417296] (-) TimerEvent: {}
+[2.518219] (-) TimerEvent: {}
+[2.619081] (-) TimerEvent: {}
+[2.719918] (-) TimerEvent: {}
+[2.820818] (-) TimerEvent: {}
+[2.921697] (-) TimerEvent: {}
+[3.022525] (-) TimerEvent: {}
+[3.123580] (-) TimerEvent: {}
+[3.224587] (-) TimerEvent: {}
+[3.325362] (-) TimerEvent: {}
+[3.426249] (-) TimerEvent: {}
+[3.527130] (-) TimerEvent: {}
+[3.621850] (mpu6050driver) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable mpu6050driver\x1b[0m\n'}
+[3.627320] (-) TimerEvent: {}
+[3.728231] (-) TimerEvent: {}
+[3.829721] (-) TimerEvent: {}
+[3.931661] (-) TimerEvent: {}
+[4.032493] (-) TimerEvent: {}
+[4.133665] (-) TimerEvent: {}
+[4.234709] (-) TimerEvent: {}
+[4.336057] (-) TimerEvent: {}
+[4.436974] (-) TimerEvent: {}
+[4.537917] (-) TimerEvent: {}
+[4.639020] (-) TimerEvent: {}
+[4.740001] (-) TimerEvent: {}
+[4.786788] (mpu6050driver) StdoutLine: {'line': b'[100%] Built target mpu6050driver\n'}
+[4.833934] (mpu6050driver) CommandEnded: {'returncode': 0}
+[4.840172] (-) TimerEvent: {}
+[4.942305] (-) TimerEvent: {}
+[4.987676] (mpu6050driver) JobProgress: {'identifier': 'mpu6050driver', 'progress': 'install'}
+[5.024525] (mpu6050driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver'], 'cwd': '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.100.217 39236 22'), ('LC_TIME', 'es_BO.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a0296009-5cfe-4289-8406-f5d7603186ce.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_BO.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/remote-cli:/home/ubuntu/.local/bin:/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'es_BO.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'es_BO.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-91fb76e771.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_BO.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_BO.UTF-8'), ('LC_IDENTIFICATION', 'es_BO.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.100.217 39236 192.168.100.35 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/ros2_ws/install/mpu6050_ros/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_BO.UTF-8'), ('LC_PAPER', 'es_BO.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble')]), 'shell': False}
+[5.042620] (-) TimerEvent: {}
+[5.061147] (mpu6050driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.062106] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/lib/mpu6050driver/mpu6050driver\n'}
+[5.074907] (mpu6050driver) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/lib/mpu6050driver/mpu6050driver" to ""\n'}
+[5.075664] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver//launch\n'}
+[5.076190] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver//launch/mpu6050driver_launch.py\n'}
+[5.077058] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver//params\n'}
+[5.077812] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver//params/mpu6050.yaml\n'}
+[5.079866] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/ament_index/resource_index/package_run_dependencies/mpu6050driver\n'}
+[5.081898] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/ament_index/resource_index/parent_prefix_path/mpu6050driver\n'}
+[5.083781] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/environment/ament_prefix_path.sh\n'}
+[5.085219] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/environment/ament_prefix_path.dsv\n'}
+[5.086776] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/environment/path.sh\n'}
+[5.088075] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/environment/path.dsv\n'}
+[5.089490] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/local_setup.bash\n'}
+[5.090878] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/local_setup.sh\n'}
+[5.092292] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/local_setup.zsh\n'}
+[5.093746] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/local_setup.dsv\n'}
+[5.095071] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/package.dsv\n'}
+[5.096947] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/ament_index/resource_index/packages/mpu6050driver\n'}
+[5.098772] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/cmake/mpu6050driverConfig.cmake\n'}
+[5.099939] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/cmake/mpu6050driverConfig-version.cmake\n'}
+[5.101332] (mpu6050driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/package.xml\n'}
+[5.108767] (mpu6050driver) CommandEnded: {'returncode': 0}
+[5.142897] (-) TimerEvent: {}
+[5.244341] (-) TimerEvent: {}
+[5.345184] (-) TimerEvent: {}
+[5.446145] (-) TimerEvent: {}
+[5.546959] (-) TimerEvent: {}
+[5.648602] (-) TimerEvent: {}
+[5.749477] (-) TimerEvent: {}
+[5.850841] (-) TimerEvent: {}
+[5.952316] (-) TimerEvent: {}
+[5.986045] (mpu6050driver) JobEnded: {'identifier': 'mpu6050driver', 'rc': 0}
+[5.989584] (-) EventReactorShutdown: {}
