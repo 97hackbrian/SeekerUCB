@@ -1,0 +1,3 @@
+[console_scripts]
+mpu6050_send = mpu6050_pub.mpu6050_pub:main
+

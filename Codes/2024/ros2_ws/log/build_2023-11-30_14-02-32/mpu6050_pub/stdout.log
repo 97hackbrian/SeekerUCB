@@ -1,0 +1,41 @@
+running egg_info
+creating ../../build/mpu6050_pub/mpu6050_pub.egg-info
+writing ../../build/mpu6050_pub/mpu6050_pub.egg-info/PKG-INFO
+writing dependency_links to ../../build/mpu6050_pub/mpu6050_pub.egg-info/dependency_links.txt
+writing entry points to ../../build/mpu6050_pub/mpu6050_pub.egg-info/entry_points.txt
+writing requirements to ../../build/mpu6050_pub/mpu6050_pub.egg-info/requires.txt
+writing top-level names to ../../build/mpu6050_pub/mpu6050_pub.egg-info/top_level.txt
+writing manifest file '../../build/mpu6050_pub/mpu6050_pub.egg-info/SOURCES.txt'
+reading manifest file '../../build/mpu6050_pub/mpu6050_pub.egg-info/SOURCES.txt'
+writing manifest file '../../build/mpu6050_pub/mpu6050_pub.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/ros2_ws/build/mpu6050_pub/build
+creating /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib
+creating /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub
+copying mpu6050_pub/calibration.py -> /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub
+copying mpu6050_pub/__init__.py -> /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub
+copying mpu6050_pub/mpu-adafruit.py -> /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub
+copying mpu6050_pub/mpu6050_pub.py -> /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub
+running install
+running install_lib
+creating /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub
+copying /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub/calibration.py -> /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub
+copying /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub/__init__.py -> /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub
+copying /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub/mpu-adafruit.py -> /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub
+copying /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub/mpu6050_pub.py -> /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub
+byte-compiling /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub/calibration.py to calibration.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub/mpu-adafruit.py to mpu-adafruit.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub/mpu6050_pub.py to mpu6050_pub.cpython-310.pyc
+running install_data
+creating /home/ubuntu/ros2_ws/install/mpu6050_pub/share/ament_index
+creating /home/ubuntu/ros2_ws/install/mpu6050_pub/share/ament_index/resource_index
+creating /home/ubuntu/ros2_ws/install/mpu6050_pub/share/ament_index/resource_index/packages
+copying resource/mpu6050_pub -> /home/ubuntu/ros2_ws/install/mpu6050_pub/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/ros2_ws/install/mpu6050_pub/share/mpu6050_pub
+running install_egg_info
+Copying ../../build/mpu6050_pub/mpu6050_pub.egg-info to /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub-0.0.0-py3.10.egg-info
+running install_scripts
+Installing mpu6050_send script to /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/mpu6050_pub
+writing list of installed files to '/home/ubuntu/ros2_ws/build/mpu6050_pub/install.log'

@@ -1,0 +1,45 @@
+[4.658s] Invoking command in '/home/ubuntu/ros2_ws/src/mpu6050_pub': PYTHONPATH=/home/ubuntu/ros2_ws/build/mpu6050_pub/prefix_override:/home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mpu6050_pub build --build-base /home/ubuntu/ros2_ws/build/mpu6050_pub/build install --record /home/ubuntu/ros2_ws/build/mpu6050_pub/install.log --single-version-externally-managed
+[6.053s] running egg_info
+[6.056s] creating ../../build/mpu6050_pub/mpu6050_pub.egg-info
+[6.057s] writing ../../build/mpu6050_pub/mpu6050_pub.egg-info/PKG-INFO
+[6.058s] writing dependency_links to ../../build/mpu6050_pub/mpu6050_pub.egg-info/dependency_links.txt
+[6.059s] writing entry points to ../../build/mpu6050_pub/mpu6050_pub.egg-info/entry_points.txt
+[6.060s] writing requirements to ../../build/mpu6050_pub/mpu6050_pub.egg-info/requires.txt
+[6.061s] writing top-level names to ../../build/mpu6050_pub/mpu6050_pub.egg-info/top_level.txt
+[6.062s] writing manifest file '../../build/mpu6050_pub/mpu6050_pub.egg-info/SOURCES.txt'
+[6.071s] reading manifest file '../../build/mpu6050_pub/mpu6050_pub.egg-info/SOURCES.txt'
+[6.074s] writing manifest file '../../build/mpu6050_pub/mpu6050_pub.egg-info/SOURCES.txt'
+[6.075s] running build
+[6.076s] running build_py
+[6.077s] creating /home/ubuntu/ros2_ws/build/mpu6050_pub/build
+[6.077s] creating /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib
+[6.078s] creating /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub
+[6.079s] copying mpu6050_pub/calibration.py -> /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub
+[6.079s] copying mpu6050_pub/__init__.py -> /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub
+[6.080s] copying mpu6050_pub/mpu-adafruit.py -> /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub
+[6.081s] copying mpu6050_pub/mpu6050_pub.py -> /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub
+[6.082s] running install
+[6.083s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.084s]   warnings.warn(
+[6.085s] running install_lib
+[6.093s] creating /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub
+[6.094s] copying /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub/calibration.py -> /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub
+[6.095s] copying /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub/__init__.py -> /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub
+[6.096s] copying /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub/mpu-adafruit.py -> /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub
+[6.096s] copying /home/ubuntu/ros2_ws/build/mpu6050_pub/build/lib/mpu6050_pub/mpu6050_pub.py -> /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub
+[6.099s] byte-compiling /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub/calibration.py to calibration.cpython-310.pyc
+[6.102s] byte-compiling /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub/__init__.py to __init__.cpython-310.pyc
+[6.103s] byte-compiling /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub/mpu-adafruit.py to mpu-adafruit.cpython-310.pyc
+[6.107s] byte-compiling /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub/mpu6050_pub.py to mpu6050_pub.cpython-310.pyc
+[6.109s] running install_data
+[6.112s] creating /home/ubuntu/ros2_ws/install/mpu6050_pub/share/ament_index
+[6.113s] creating /home/ubuntu/ros2_ws/install/mpu6050_pub/share/ament_index/resource_index
+[6.114s] creating /home/ubuntu/ros2_ws/install/mpu6050_pub/share/ament_index/resource_index/packages
+[6.114s] copying resource/mpu6050_pub -> /home/ubuntu/ros2_ws/install/mpu6050_pub/share/ament_index/resource_index/packages
+[6.115s] copying package.xml -> /home/ubuntu/ros2_ws/install/mpu6050_pub/share/mpu6050_pub
+[6.115s] running install_egg_info
+[6.123s] Copying ../../build/mpu6050_pub/mpu6050_pub.egg-info to /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages/mpu6050_pub-0.0.0-py3.10.egg-info
+[6.129s] running install_scripts
+[6.226s] Installing mpu6050_send script to /home/ubuntu/ros2_ws/install/mpu6050_pub/lib/mpu6050_pub
+[6.228s] writing list of installed files to '/home/ubuntu/ros2_ws/build/mpu6050_pub/install.log'
+[6.357s] Invoked command in '/home/ubuntu/ros2_ws/src/mpu6050_pub' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/build/mpu6050_pub/prefix_override:/home/ubuntu/ros2_ws/install/mpu6050_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mpu6050_pub build --build-base /home/ubuntu/ros2_ws/build/mpu6050_pub/build install --record /home/ubuntu/ros2_ws/build/mpu6050_pub/install.log --single-version-externally-managed

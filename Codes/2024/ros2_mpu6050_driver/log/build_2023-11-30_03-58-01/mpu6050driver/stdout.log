@@ -1,0 +1,25 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable mpu6050driver[0m
+[100%] Built target mpu6050driver
+-- Install configuration: ""
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/lib/mpu6050driver/mpu6050driver
+-- Set runtime path of "/home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/lib/mpu6050driver/mpu6050driver" to ""
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver//launch
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver//launch/mpu6050driver_launch.py
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver//params
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver//params/mpu6050.yaml
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/ament_index/resource_index/package_run_dependencies/mpu6050driver
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/ament_index/resource_index/parent_prefix_path/mpu6050driver
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/environment/ament_prefix_path.sh
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/environment/ament_prefix_path.dsv
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/environment/path.sh
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/environment/path.dsv
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/local_setup.bash
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/local_setup.sh
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/local_setup.zsh
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/local_setup.dsv
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/package.dsv
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/ament_index/resource_index/packages/mpu6050driver
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/cmake/mpu6050driverConfig.cmake
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/cmake/mpu6050driverConfig-version.cmake
+-- Installing: /home/ubuntu/ros2_mpu6050_driver/install/mpu6050driver/share/mpu6050driver/package.xml

@@ -1,0 +1,11 @@
+[0.417s] Invoking command in '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver -- -j4 -l4
+[0.610s] [35m[1mConsolidate compiler generated dependencies of target mpu6050driver[0m
+[0.713s] [ 33%] [32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o[0m
+[1.340s] [01m[K/home/ubuntu/ros2_mpu6050_driver/src/mpu6050sensor.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Ki2c/smbus.h: No such file or directory
+[1.341s]     6 | #include [01;31m[K<i2c/smbus.h>[m[K
+[1.341s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[1.342s] compilation terminated.
+[1.348s] gmake[2]: *** [CMakeFiles/mpu6050driver.dir/build.make:90: CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o] Error 1
+[1.349s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mpu6050driver.dir/all] Error 2
+[1.351s] gmake: *** [Makefile:146: all] Error 2
+[1.359s] Invoked command in '/home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver' returned '2': CMAKE_PREFIX_PATH=/home/ubuntu/ros2_ws/install/mpu6050_ros:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_mpu6050_driver/build/mpu6050driver -- -j4 -l4
